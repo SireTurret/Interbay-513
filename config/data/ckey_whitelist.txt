@@ -3,3 +3,9 @@
 # comments and lines starting with space or tab are ignored  #
 ##############################################################
 mattroks101
+turret_drehturm
+turretdrehturm
+butmun
+khadd
+krunes
+leak_machine
