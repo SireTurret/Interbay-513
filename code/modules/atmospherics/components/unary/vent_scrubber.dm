@@ -160,12 +160,10 @@
 	if(scrubbing && power_draw <= 0)	//99% of all scrubbers
 		//Fucking hibernate because you ain't doing shit.
 		hibernate = world.time + (rand(100,200))
-<<<<<<< HEAD
-=======
+
 	else if(scrubbing == SCRUBBER_EXCHANGE) // after sleep check so it only does an exchange if there are bad gasses that have been scrubbed
 		transfer_moles = min(environment.total_moles, environment.total_moles*MAX_SCRUBBER_FLOWRATE/environment.volume)
 		power_draw += pump_gas(src, environment, air_contents, transfer_moles / 4, power_rating)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	if (power_draw >= 0)
 		last_power_draw = power_draw
