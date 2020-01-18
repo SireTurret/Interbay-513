@@ -67,7 +67,7 @@
 		target = null
 		return
 
-    examine(mob)
+    examine(mob/user)
         . = ..(user)
         for(var/obj/machinery/nuclearbomb/bomb in world)
             if(bomb.timing)
