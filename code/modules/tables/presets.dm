@@ -26,11 +26,6 @@
 	reinforced = MATERIAL_STEEL
 
 /obj/structure/table/woodentable
-<<<<<<< HEAD
-	icon_state = "plain_preview"
-	color = COLOR_BROWN_ORANGE
-	material = "wood"
-=======
 	icon_state = "solid_preview"
 	color = COLOR_BROWN_ORANGE
 	material = MATERIAL_WOOD
@@ -40,7 +35,6 @@
 	color = COLOR_BROWN_ORANGE
 	material = MATERIAL_WOOD
 	reinforced = MATERIAL_WOOD
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/structure/table/gamblingtable
 	icon_state = "gamble_preview"
@@ -53,13 +47,10 @@
 	alpha = 77 // 0.3 * 255
 	material = MATERIAL_GLASS
 
-<<<<<<< HEAD
-=======
 /obj/structure/table/glass/pglass
 	color = "#8f29a3"
 	material = MATERIAL_PHORON_GLASS
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/structure/table/holotable
 	icon_state = "holo_preview"
 	color = COLOR_OFF_WHITE
