@@ -7,12 +7,7 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
-
-<<<<<<< HEAD
 	matter = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 2500)
-=======
-	matter = list(MATERIAL_STEEL = 10000,MATERIAL_GLASS = 2500)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	var/code = 2
 
