@@ -74,11 +74,8 @@
 	. = ..()
 
 /obj/machinery/door/firedoor/get_material()
-<<<<<<< HEAD
 	return get_material_by_name(MATERIAL_STEEL)
-=======
 	return SSmaterials.get_material_by_name(MATERIAL_STEEL)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/machinery/door/firedoor/examine(mob/user)
 	. = ..(user, 1)
