@@ -13,10 +13,7 @@
 	icon = DRINK_ICON_FILE
 	base_icon = "square" // Base icon name
 	volume = 30
-<<<<<<< HEAD
-=======
 	matter = list(MATERIAL_GLASS = 65)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	var/list/extras = list() // List of extras. Two extras maximum
 
