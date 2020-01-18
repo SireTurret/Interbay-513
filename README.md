@@ -1,4 +1,4 @@
-# GOODNIGHT, SWEET PRINCE ;_;7
+# INTERHIPPIE - A FORK ON INTERBAY - WHICH IS A FORK OF BAY
 [Baystation's Website](http://baystation12.net/) - [InterBay's Code](http://github.com/mattroks101/InterBay/)
 ---
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
