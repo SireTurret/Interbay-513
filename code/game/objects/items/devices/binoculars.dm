@@ -11,9 +11,5 @@
 	throw_range = 15
 	throw_speed = 3
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/item/device/binoculars/attack_self(mob/user)
 	zoom(user)
