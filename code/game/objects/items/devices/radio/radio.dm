@@ -46,12 +46,8 @@ var/global/list/default_medbay_channels = list(
 	throw_speed = 2
 	throw_range = 9
 	w_class = ITEM_SIZE_SMALL
-
-<<<<<<< HEAD
 	matter = list(MATERIAL_GLASS = 25, MATERIAL_STEEL = 75)
-=======
-	matter = list(MATERIAL_GLASS = 25,MATERIAL_STEEL = 75)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
+
 	var/const/FREQ_LISTENING = 1
 	var/list/internal_channels
 
