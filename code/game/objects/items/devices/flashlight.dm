@@ -8,11 +8,8 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 
-<<<<<<< HEAD
 	matter = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20)
-=======
 	matter = list(MATERIAL_STEEL = 50,MATERIAL_GLASS = 20)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	action_button_name = "Toggle Flashlight"
 	var/on = 0
@@ -139,10 +136,8 @@
 	icon_state = "maglight"
 	force = 10
 	attack_verb = list ("smacked", "thwacked", "thunked")
-<<<<<<< HEAD
 	matter = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 50)
 	hitsound = "swing_hit"
-=======
 	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 50)
 	hitsound = "swing_hit"
 	flashlight_max_bright = 0.5
@@ -170,7 +165,6 @@
 		item_state = "lantern"
 
 /******************************Lantern*******************************/
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/device/flashlight/drone
 	name = "low-power flashlight"
