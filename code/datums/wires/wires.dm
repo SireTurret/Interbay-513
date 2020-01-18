@@ -176,7 +176,6 @@ var/list/wireColours = list("red", "blue", "green", "darkred", "orange", "brown"
 		return
 	return wd.description
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /datum/wires/proc/CanUse(var/mob/living/L)
 	return 1
 
