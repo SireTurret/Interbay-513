@@ -6,6 +6,10 @@
 	var/label = null
 	var/labels_left = 30
 	var/mode = 0	//off or on.
+<<<<<<< HEAD
+=======
+	matter = list(MATERIAL_STEEL = 100)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/hand_labeler/attack()
 	return

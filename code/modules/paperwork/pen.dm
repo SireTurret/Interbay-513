@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_TINY
 	throw_speed = 7
 	throw_range = 15
-	matter = list(DEFAULT_WALL_MATERIAL = 10)
+	matter = list(MATERIAL_STEEL = 10)
 	var/colour = "black"	//what colour the ink is!
 
 
@@ -195,6 +195,16 @@
 	var/instant = 0
 	var/colourName = "red" //for updateIcon purposes
 
+<<<<<<< HEAD
 	New()
 		name = "[colourName] crayon"
 		..()
+=======
+/obj/item/weapon/pen/fancy
+	name = "fancy pen"
+	desc = "A high quality traditional fountain pen with an internal reservoir and an extra fine gold-platinum nib. Guaranteed never to leak."
+	icon_state = "fancy"
+	throwforce = 1 //pointy
+	colour = "#1c1713" //dark ashy brownish
+	matter = list(MATERIAL_STEEL = 15)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.

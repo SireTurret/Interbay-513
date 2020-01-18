@@ -118,6 +118,10 @@
 	w_class = ITEM_SIZE_TINY
 	icon = 'icons/obj/ecig.dmi'
 	icon_state = "ecartridge"
+<<<<<<< HEAD
+=======
+	matter = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 10)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	volume = 20
 	flags = OPENCONTAINER
 

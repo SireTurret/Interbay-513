@@ -25,7 +25,7 @@
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
-	matter = list(DEFAULT_WALL_MATERIAL = 150)
+	matter = list(MATERIAL_STEEL = 150)
 	center_of_mass = "x=17;y=16"
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 
@@ -45,7 +45,7 @@
 	throwforce = 5.0
 	throw_speed = 3
 	throw_range = 5
-	matter = list(DEFAULT_WALL_MATERIAL = 75)
+	matter = list(MATERIAL_STEEL = 75)
 	center_of_mass = "x=16;y=7"
 	attack_verb = list("stabbed")
 	lock_picking_level = 5
@@ -104,7 +104,7 @@
 	throw_range = 9
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
-	matter = list(DEFAULT_WALL_MATERIAL = 80)
+	matter = list(MATERIAL_STEEL = 80)
 	center_of_mass = "x=18;y=10"
 	attack_verb = list("pinched", "nipped")
 	sharp = 1
@@ -205,7 +205,7 @@
 	w_class = ITEM_SIZE_SMALL
 
 	//Cost to make in the autolathe
-	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 30)
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 30)
 
 	//R&D tech level
 	origin_tech = list(TECH_ENGINEERING = 1)
@@ -433,27 +433,75 @@
 	name = "miniature welding tool"
 	max_fuel = 5
 	origin_tech = list(TECH_ENGINEERING = 2)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 15, "glass" = 5)
+=======
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_GLASS = 5)
+	w_class = ITEM_SIZE_SMALL
+	tank = /obj/item/weapon/welder_tank/mini
+
+/obj/item/weapon/welder_tank/mini
+	name = "small welding fuel tank"
+	icon_state = "fuel_s"
+	w_class = ITEM_SIZE_TINY
+	max_fuel = 5
+	can_remove = 0
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/weldingtool/largetank
 	name = "industrial welding tool"
 	max_fuel = 40
 	origin_tech = list(TECH_ENGINEERING = 2)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 60)
+=======
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 60)
+	w_class = ITEM_SIZE_LARGE
+	tank = /obj/item/weapon/welder_tank/large
+
+/obj/item/weapon/welder_tank/large
+	name = "large welding fuel tank"
+	icon_state = "fuel_l"
+	w_class = ITEM_SIZE_NORMAL
+	max_fuel = 40
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/weldingtool/hugetank
 	name = "upgraded welding tool"
 	max_fuel = 80
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_ENGINEERING = 3)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 120)
+=======
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 120)
+	tank = /obj/item/weapon/welder_tank/huge
+
+/obj/item/weapon/welder_tank/huge
+	name = "huge welding fuel tank"
+	icon_state = "fuel_h"
+	w_class = ITEM_SIZE_LARGE
+	max_fuel = 80
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/weldingtool/experimental
 	name = "experimental welding tool"
 	max_fuel = 40
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_ENGINEERING = 4, TECH_PHORON = 3)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 120)
+=======
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 120)
+	tank = /obj/item/weapon/welder_tank/experimental
+
+/obj/item/weapon/welder_tank/experimental
+	name = "experimental welding fuel tank"
+	icon_state = "fuel_x"
+	w_class = ITEM_SIZE_NORMAL
+	max_fuel = 40
+	can_remove = 0
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/last_gen = 0
 
 
@@ -480,7 +528,11 @@
 	item_state = "crowbar"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_ENGINEERING = 1)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 50)
+=======
+	matter = list(MATERIAL_STEEL = 140)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	center_of_mass = "x=16;y=20"
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned")
 	parry_sounds = list('sound/weapons/blunt_parry1.ogg', 'sound/weapons/blunt_parry2.ogg', 'sound/weapons/blunt_parry3.ogg')
@@ -490,10 +542,23 @@
 	icon_state = "red_crowbar"
 	item_state = "crowbar_red"
 
+<<<<<<< HEAD
 /obj/item/weapon/crowbar/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
 		return 1
 	return 0
+=======
+/obj/item/weapon/crowbar/prybar
+	name = "pry bar"
+	desc = "A steel bar with a wedge. It comes in a variety of configurations - collect them all."
+	icon_state = "prybar"
+	item_state = "crowbar"
+	force = 4.0
+	throwforce = 6.0
+	throw_range = 5
+	w_class = ITEM_SIZE_SMALL
+	matter = list(MATERIAL_STEEL = 80)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 
 

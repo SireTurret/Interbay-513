@@ -169,9 +169,17 @@ var/global/list/breach_burn_descriptors = list(
 		else if(burn_damage >= 3 && burn_damage > brute_damage)
 			name = "scorched [base_name]"
 		else
+<<<<<<< HEAD
 			name = "damaged [base_name]"
 	else
 		name = "[base_name]"
+=======
+			SetName("damaged [initial(name)]")
+	else if(all_patched)
+		SetName("patched [initial(name)]")
+	else
+		SetName(initial(name))
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	return damage
 
@@ -181,9 +189,9 @@ var/global/list/breach_burn_descriptors = list(
 	if(istype(W,/obj/item/stack/material))
 		var/repair_power = 0
 		switch(W.get_material_name())
-			if(DEFAULT_WALL_MATERIAL)
+			if(MATERIAL_STEEL)
 				repair_power = 2
-			if("plastic")
+			if(MATERIAL_PLASTIC)
 				repair_power = 1
 
 		if(!repair_power)

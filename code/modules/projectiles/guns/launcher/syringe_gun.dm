@@ -4,8 +4,13 @@
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "syringe-cartridge"
 	var/icon_flight = "syringe-cartridge-flight" //so it doesn't look so weird when shot
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 125, "glass" = 375)
 	flags = CONDUCT
+=======
+	matter = list(MATERIAL_STEEL = 125, MATERIAL_GLASS = 375)
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	slot_flags = SLOT_BELT | SLOT_EARS
 	throwforce = 3
 	force = 3
@@ -68,7 +73,7 @@
 	item_state = "syringegun"
 	w_class = ITEM_SIZE_LARGE
 	force = 7
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	matter = list(MATERIAL_STEEL = 2000)
 	slot_flags = SLOT_BELT
 
 	fire_sound = 'sound/weapons/empty.ogg'

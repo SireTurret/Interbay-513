@@ -4,7 +4,11 @@
 /obj/item/weapon/material/knife/ritual/sacrifice
 	name = "sacrificial dagger"
 	desc = "This knife is dull but well used."
+<<<<<<< HEAD
 	default_material = "MATERIAL_CULT"
+=======
+	default_material = MATERIAL_CULT
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/material/knife/ritual/sacrifice/resolve_attackby(var/atom/a, var/mob/user, var/click_params)
 	var/turf/T = get_turf(a)

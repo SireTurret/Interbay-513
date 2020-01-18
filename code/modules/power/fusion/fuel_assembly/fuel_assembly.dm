@@ -55,13 +55,20 @@
 
 // Mapper shorthand.
 /obj/item/weapon/fuel_assembly/deuterium/New(var/newloc)
-	..(newloc, "deuterium")
+	..(newloc, MATERIAL_DEUTERIUM)
 
 /obj/item/weapon/fuel_assembly/tritium/New(var/newloc)
-	..(newloc, "tritium")
+	..(newloc, MATERIAL_TRITIUM)
 
 /obj/item/weapon/fuel_assembly/phoron/New(var/newloc)
-	..(newloc, "phoron")
+	..(newloc, MATERIAL_PHORON)
 
 /obj/item/weapon/fuel_assembly/supermatter/New(var/newloc)
+<<<<<<< HEAD
 	..(newloc, "supermatter")
+=======
+	..(newloc, MATERIAL_SUPERMATTER)
+
+/obj/item/fuel_assembly/hydrogen/New(var/newloc)
+	..(newloc, MATERIAL_HYDROGEN)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.

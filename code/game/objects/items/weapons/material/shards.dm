@@ -15,7 +15,7 @@
 	thrown_force_divisor = 0.4 // 4 with weight 15 (glass)
 	item_state = "shard-glass"
 	attack_verb = list("stabbed", "slashed", "sliced", "cut")
-	default_material = "glass"
+	default_material = MATERIAL_GLASS
 	unbreakable = 1 //It's already broken.
 	drops_debris = 0
 
@@ -92,9 +92,19 @@
 			return
 
 // Preset types - left here for the code that uses them
+<<<<<<< HEAD
 /obj/item/weapon/material/shard/shrapnel/New(loc)
 	..(loc, "steel")
 	force = 10
+=======
+/obj/item/weapon/material/shrapnel
+	name = "shrapnel"
+	default_material = MATERIAL_STEEL
+	w_class = ITEM_SIZE_TINY	//it's real small
+
+/obj/item/weapon/material/shard/shrapnel/New(loc)
+	..(loc, MATERIAL_STEEL)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/material/shard/phoron/New(loc)
-	..(loc, "phglass")
+	..(loc, MATERIAL_PHORON_GLASS)

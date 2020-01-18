@@ -38,7 +38,32 @@
 	item_state = "knife"
 	attack_verb = list("stabbed", "chopped", "cut")
 	applies_material_colour = 1
+<<<<<<< HEAD
 	drawsound = 'sound/items/unholster_knife.ogg'
+=======
+
+/obj/item/weapon/material/hatchet/machete
+	name = "machete"
+	desc = "A long, sturdy blade with a rugged handle. Leading the way to cursed treasures since before space travel."
+	item_state = "machete"
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	default_material = MATERIAL_TITANIUM
+	base_parry_chance = 50
+	attack_cooldown_modifier = 1
+
+/obj/item/weapon/material/hatchet/machete/Initialize()
+	icon_state = "machete[pick("","_red","_blue", "_black", "_olive")]"
+	. = ..()
+
+/obj/item/weapon/material/hatchet/machete/deluxe
+	name = "deluxe machete"
+	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
+
+/obj/item/weapon/material/hatchet/machete/deluxe/Initialize()
+	. = ..()
+	icon_state = "machetedx"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/material/minihoe // -- Numbers
 	name = "mini hoe"

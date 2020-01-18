@@ -15,7 +15,12 @@
 	var/unbreakable
 	var/force_divisor = 0.5
 	var/thrown_force_divisor = 0.5
+<<<<<<< HEAD
 	var/default_material = DEFAULT_WALL_MATERIAL
+=======
+	var/attack_cooldown_modifier
+	var/default_material = MATERIAL_STEEL
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/material/material
 	var/drops_debris = 1
 

@@ -9,8 +9,14 @@
 	icon_state = "revolver"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	w_class = ITEM_SIZE_NORMAL
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 1000)
 	screen_shake = 0
+=======
+	matter = list(MATERIAL_STEEL = 1000)
+	screen_shake = 1
+	combustion = 1
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	var/caliber = "357"		//determines which casings will fit
 	var/handle_casings = EJECT_CASINGS	//determines how spent casings should be handled

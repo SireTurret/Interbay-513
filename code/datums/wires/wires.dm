@@ -164,6 +164,19 @@ var/list/wireColours = list("red", "blue", "green", "darkred", "orange", "brown"
 /datum/wires/proc/UpdatePulsed(var/index)
 	return
 
+<<<<<<< HEAD
+=======
+/datum/wires/proc/examine(index, mob/user)
+	. = "You aren't sure what this wire does."
+
+	var/datum/wire_description/wd = get_description(index)
+	if(!wd)
+		return
+	if(wd.skill_level && !user.skill_check(SKILL_ELECTRICAL, wd.skill_level))
+		return
+	return wd.description
+
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /datum/wires/proc/CanUse(var/mob/living/L)
 	return 1
 

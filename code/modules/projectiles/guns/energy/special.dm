@@ -174,6 +174,7 @@ obj/item/weapon/gun/energy/staff/focus
 	item_state = "focus"
 	slot_flags = SLOT_BACK
 	projectile_type = /obj/item/projectile/forcebolt
+<<<<<<< HEAD
 	/*
 	attack_self(mob/living/user as mob)
 		if(projectile_type == /obj/item/projectile/forcebolt)
@@ -185,3 +186,28 @@ obj/item/weapon/gun/energy/staff/focus
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
 			projectile_type = /obj/item/projectile/forcebolt"
 	*/
+=======
+
+/obj/item/weapon/gun/energy/plasmacutter
+	name = "plasma cutter"
+	desc = "A mining tool capable of expelling concentrated plasma bursts. You could use it to cut limbs off of xenos! Or, you know, mine stuff."
+	charge_meter = 0
+	icon = 'icons/obj/tools.dmi'
+	icon_state = "plasmacutter"
+	item_state = "plasmacutter"
+	fire_sound = 'sound/weapons/plasma_cutter.ogg'
+	slot_flags = SLOT_BELT|SLOT_BACK
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	origin_tech = list(TECH_MATERIAL = 4, TECH_PHORON = 4, TECH_ENGINEERING = 6, TECH_COMBAT = 3)
+	matter = list(MATERIAL_STEEL = 4000)
+	projectile_type = /obj/item/projectile/beam/plasmacutter
+	max_shots = 10
+	self_recharge = 1
+
+/obj/item/weapon/gun/energy/plasmacutter/mounted
+	name = "mounted plasma cutter"
+	use_external_power = 1
+	max_shots = 4
+	has_safety = FALSE
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.

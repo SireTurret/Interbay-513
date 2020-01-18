@@ -46,11 +46,17 @@
 			var/turf/simulated/T = locate(tx+j, ty+i, origin_z)
 			if(!istype(T) || !T.has_resources)
 				continue
+<<<<<<< HEAD
 			if(!priority_process) sleep(-1)
+=======
+			if(!priority_process)
+				CHECK_TICK
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 			T.resources = list()
-			T.resources["silicates"] = rand(3,5)
-			T.resources["carbonaceous rock"] = rand(3,5)
+			T.resources[MATERIAL_SAND] = rand(3,5)
+			T.resources[MATERIAL_GRAPHENE] = rand(3,5)
 
+<<<<<<< HEAD
 			var/current_cell = map[get_map_cell(x,y)]
 			if(current_cell < rare_val)      // Surface metals.
 				T.resources["iron"] =     rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
@@ -80,6 +86,38 @@
 				T.resources["gold"] =     0
 				T.resources["silver"] =   0
 	return
+=======
+			var/tmp_cell
+			TRANSLATE_AND_VERIFY_COORD(x, y)
+
+			if(tmp_cell < rare_val)      // Surface metals.
+				T.resources[MATERIAL_IRON] =     rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
+				T.resources[MATERIAL_GOLD] =     rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
+				T.resources[MATERIAL_SILVER] =   rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
+				T.resources[MATERIAL_URANIUM] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
+				T.resources[MATERIAL_DIAMOND] =  0
+				T.resources[MATERIAL_PHORON] =   0
+				T.resources[MATERIAL_OSMIUM] =   0
+				T.resources[MATERIAL_HYDROGEN] = 0
+			else if(tmp_cell < deep_val) // Rare metals.
+				T.resources[MATERIAL_GOLD] =     rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_SILVER] =   rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_URANIUM] =  rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_PHORON] =   rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_OSMIUM] =   rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_HYDROGEN] = 0
+				T.resources[MATERIAL_DIAMOND] =  0
+				T.resources[MATERIAL_IRON] =     0
+			else                             // Deep metals.
+				T.resources[MATERIAL_URANIUM] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
+				T.resources[MATERIAL_DIAMOND] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
+				T.resources[MATERIAL_PHORON] =   rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
+				T.resources[MATERIAL_OSMIUM] =   rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
+				T.resources[MATERIAL_HYDROGEN] = rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
+				T.resources[MATERIAL_IRON] =     0
+				T.resources[MATERIAL_GOLD] =     0
+				T.resources[MATERIAL_SILVER] =   0
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/random_map/noise/ore/get_map_char(var/value)
 	if(value < rare_val)

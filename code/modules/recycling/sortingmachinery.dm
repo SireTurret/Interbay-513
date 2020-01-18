@@ -334,6 +334,10 @@
 	item_state = "electronic"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
+<<<<<<< HEAD
+=======
+	matter = list(MATERIAL_STEEL = 100, MATERIAL_GLASS = 34)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/device/destTagger/proc/openwindow(mob/user as mob)
 	var/dat = "<tt><center><h1><b>TagMaster 2.3</b></h1></center>"

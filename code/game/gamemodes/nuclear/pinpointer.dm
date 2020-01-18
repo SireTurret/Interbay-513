@@ -6,10 +6,15 @@
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
 	item_state = "electronic"
+<<<<<<< HEAD
 	throw_speed = 4
 	throw_range = 20
 	matter = list(MATERIAL_STEEL = 500)
 	var/obj/item/weapon/disk/nuclear/the_disk = null
+=======
+	matter = list(MATERIAL_STEEL = 500)
+	var/weakref/target
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/active = 0
 
 
@@ -23,6 +28,7 @@
 			icon_state = "pinoff"
 			to_chat(usr, "<span>You deactivate the pinpointer</span>")
 
+<<<<<<< HEAD
 	proc/workdisk()
 		if(!active) return
 		if(!the_disk)
@@ -41,6 +47,31 @@
 			if(16 to INFINITY)
 				icon_state = "pinonfar"
 		spawn(5) .()
+=======
+/obj/item/weapon/pinpointer/advpinpointer/verb/toggle_sound()
+	set category = "Object"
+	set name = "Toggle Pinpointer Beeping"
+	set src in view(1)
+
+	if(beeping >= 0)
+		beeping = -1
+		to_chat(usr, "You mute [src].")
+	else
+		beeping = 0
+		to_chat(usr, "You enable the sound indication on [src].")
+
+/obj/item/weapon/pinpointer/proc/acquire_target()
+	var/obj/item/weapon/disk/nuclear/the_disk = locate()
+	return weakref(the_disk)
+
+/obj/item/weapon/pinpointer/Process()
+	update_icon()
+	if(!target)
+		return
+	if(!target.resolve())
+		target = null
+		return
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	examine(mob/user)
 		. = ..(user)
@@ -94,6 +125,15 @@
 				icon_state = "pinonfar"
 		spawn(5) .()
 
+<<<<<<< HEAD
+=======
+/obj/item/weapon/pinpointer/nukeop/acquire_target()
+	if(locate_shuttle)
+		var/obj/machinery/computer/shuttle_control/multi/syndicate/home = locate()
+		return weakref(home)
+	else
+		return ..()
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	proc/workobj()
 		if(!active)

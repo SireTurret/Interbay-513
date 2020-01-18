@@ -161,8 +161,12 @@
 	color = "#D0D0D0"
 
 /datum/reagent/uranium
+<<<<<<< HEAD
 	name ="Uranium"
 	id = "uranium"
+=======
+	name = "Uranium"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	description = "A silvery-white metallic chemical element in the actinide series, weakly radioactive."
 	taste_description = "the inside of a reactor"
 	reagent_state = SOLID

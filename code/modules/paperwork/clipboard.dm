@@ -10,6 +10,10 @@
 	var/obj/item/weapon/pen/haspen		//The stored pen.
 	var/obj/item/weapon/toppaper	//The topmost piece of paper.
 	slot_flags = SLOT_BELT
+<<<<<<< HEAD
+=======
+	matter = list(MATERIAL_STEEL = 70)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/clipboard/New()
 	update_icon()

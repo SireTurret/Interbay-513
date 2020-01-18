@@ -11,7 +11,11 @@
 	clickvol = 30
 
 	var/list/machine_recipes
+<<<<<<< HEAD
 	var/list/stored_material =  list(MATERIAL_STEELL = 0, MATERIAL_GLASS = 0)
+=======
+	var/list/stored_material =  list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/list/storage_capacity = list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0)
 	var/show_category = "All"
 

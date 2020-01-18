@@ -68,7 +68,7 @@ other types of metals and chemistry for reagents).
 	desc = "Produce additional disks for storing device designs."
 	id = "design_disk"
 	req_tech = list(TECH_DATA = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 30, "glass" = 10)
+	materials = list(MATERIAL_STEEL = 30, MATERIAL_GLASS = 10)
 	build_path = /obj/item/weapon/disk/design_disk
 	sort_string = "GAAAA"
 
@@ -77,7 +77,7 @@ other types of metals and chemistry for reagents).
 	desc = "Produce additional disks for storing technology data."
 	id = "tech_disk"
 	req_tech = list(TECH_DATA = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 30, "glass" = 10)
+	materials = list(MATERIAL_STEEL = 30, MATERIAL_GLASS = 10)
 	build_path = /obj/item/weapon/disk/tech_disk
 	sort_string = "GAAAB"
 
@@ -95,105 +95,105 @@ other types of metals and chemistry for reagents).
 /datum/design/item/stock_part/basic_capacitor
 	id = "basic_capacitor"
 	req_tech = list(TECH_POWER = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 	build_path = /obj/item/weapon/stock_parts/capacitor
 	sort_string = "CAAAA"
 
 /datum/design/item/stock_part/adv_capacitor
 	id = "adv_capacitor"
 	req_tech = list(TECH_POWER = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 	build_path = /obj/item/weapon/stock_parts/capacitor/adv
 	sort_string = "CAAAB"
 
 /datum/design/item/stock_part/super_capacitor
 	id = "super_capacitor"
 	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50, "gold" = 20)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50, MATERIAL_GOLD = 20)
 	build_path = /obj/item/weapon/stock_parts/capacitor/super
 	sort_string = "CAAAC"
 
 /datum/design/item/stock_part/micro_mani
 	id = "micro_mani"
 	req_tech = list(TECH_MATERIAL = 1, TECH_DATA = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 30)
+	materials = list(MATERIAL_STEEL = 30)
 	build_path = /obj/item/weapon/stock_parts/manipulator
 	sort_string = "CAABA"
 
 /datum/design/item/stock_part/nano_mani
 	id = "nano_mani"
 	req_tech = list(TECH_MATERIAL = 3, TECH_DATA = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 30)
+	materials = list(MATERIAL_STEEL = 30)
 	build_path = /obj/item/weapon/stock_parts/manipulator/nano
 	sort_string = "CAABB"
 
 /datum/design/item/stock_part/pico_mani
 	id = "pico_mani"
 	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 30)
+	materials = list(MATERIAL_STEEL = 30)
 	build_path = /obj/item/weapon/stock_parts/manipulator/pico
 	sort_string = "CAABC"
 
 /datum/design/item/stock_part/basic_matter_bin
 	id = "basic_matter_bin"
 	req_tech = list(TECH_MATERIAL = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 80)
+	materials = list(MATERIAL_STEEL = 80)
 	build_path = /obj/item/weapon/stock_parts/matter_bin
 	sort_string = "CAACA"
 
 /datum/design/item/stock_part/adv_matter_bin
 	id = "adv_matter_bin"
 	req_tech = list(TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 80)
+	materials = list(MATERIAL_STEEL = 80)
 	build_path = /obj/item/weapon/stock_parts/matter_bin/adv
 	sort_string = "CAACB"
 
 /datum/design/item/stock_part/super_matter_bin
 	id = "super_matter_bin"
 	req_tech = list(TECH_MATERIAL = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 80)
+	materials = list(MATERIAL_STEEL = 80)
 	build_path = /obj/item/weapon/stock_parts/matter_bin/super
 	sort_string = "CAACC"
 
 /datum/design/item/stock_part/basic_micro_laser
 	id = "basic_micro_laser"
 	req_tech = list(TECH_MAGNET = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "glass" = 20)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 20)
 	build_path = /obj/item/weapon/stock_parts/micro_laser
 	sort_string = "CAADA"
 
 /datum/design/item/stock_part/high_micro_laser
 	id = "high_micro_laser"
 	req_tech = list(TECH_MAGNET = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "glass" = 20)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 20)
 	build_path = /obj/item/weapon/stock_parts/micro_laser/high
 	sort_string = "CAADB"
 
 /datum/design/item/stock_part/ultra_micro_laser
 	id = "ultra_micro_laser"
 	req_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "glass" = 20, "uranium" = 10)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 20, MATERIAL_URANIUM = 10)
 	build_path = /obj/item/weapon/stock_parts/micro_laser/ultra
 	sort_string = "CAADC"
 
 /datum/design/item/stock_part/basic_sensor
 	id = "basic_sensor"
 	req_tech = list(TECH_MAGNET = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 20)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20)
 	build_path = /obj/item/weapon/stock_parts/scanning_module
 	sort_string = "CAAEA"
 
 /datum/design/item/stock_part/adv_sensor
 	id = "adv_sensor"
 	req_tech = list(TECH_MAGNET = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 20)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20)
 	build_path = /obj/item/weapon/stock_parts/scanning_module/adv
 	sort_string = "CAAEB"
 
 /datum/design/item/stock_part/phasic_sensor
 	id = "phasic_sensor"
 	req_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 20, "silver" = 10)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20, MATERIAL_SILVER = 10)
 	build_path = /obj/item/weapon/stock_parts/scanning_module/phasic
 	sort_string = "CAAEC"
 
@@ -202,7 +202,7 @@ other types of metals and chemistry for reagents).
 	desc = "Special mechanical module made to store, sort, and apply standard machine parts."
 	id = "rped"
 	req_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000)
+	materials = list(MATERIAL_STEEL = 15000, MATERIAL_GLASS = 5000)
 	build_path = /obj/item/weapon/storage/part_replacer
 	sort_string = "CBAAA"
 
@@ -230,7 +230,7 @@ other types of metals and chemistry for reagents).
 	name = "basic"
 	id = "basic_cell"
 	req_tech = list(TECH_POWER = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 50)
 	build_path = /obj/item/weapon/cell
 	sort_string = "DAAAA"
 
@@ -238,7 +238,7 @@ other types of metals and chemistry for reagents).
 	name = "high-capacity"
 	id = "high_cell"
 	req_tech = list(TECH_POWER = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 60)
+	materials = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 60)
 	build_path = /obj/item/weapon/cell/high
 	sort_string = "DAAAB"
 
@@ -246,7 +246,7 @@ other types of metals and chemistry for reagents).
 	name = "super-capacity"
 	id = "super_cell"
 	req_tech = list(TECH_POWER = 3, TECH_MATERIAL = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 70)
+	materials = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 70)
 	build_path = /obj/item/weapon/cell/super
 	sort_string = "DAAAC"
 
@@ -254,7 +254,7 @@ other types of metals and chemistry for reagents).
 	name = "hyper-capacity"
 	id = "hyper_cell"
 	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 400, "gold" = 150, "silver" = 150, "glass" = 70)
+	materials = list(MATERIAL_STEEL = 400, MATERIAL_GOLD = 150, MATERIAL_SILVER = 150, MATERIAL_GLASS = 70)
 	build_path = /obj/item/weapon/cell/hyper
 	sort_string = "DAAAD"
 
@@ -262,7 +262,7 @@ other types of metals and chemistry for reagents).
 	name = "basic"
 	id = "device_cell_standard"
 	req_tech = list(TECH_POWER = 1)
-	materials = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 5)
+	materials = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 5)
 	build_path = /obj/item/weapon/cell/device/standard
 	sort_string = "DAAAE"
 
@@ -271,12 +271,12 @@ other types of metals and chemistry for reagents).
 	build_type = PROTOLATHE | MECHFAB
 	id = "device_cell_high"
 	req_tech = list(TECH_POWER = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 6)
+	materials = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
 	build_path = /obj/item/weapon/cell/device/high
 	sort_string = "DAAAF"
 
 /datum/design/item/hud
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 
 /datum/design/item/hud/AssembleDesignName()
 	..()
@@ -304,8 +304,27 @@ other types of metals and chemistry for reagents).
 	desc = "Using the meson-scanning technology those glasses allow you to see through walls, floor or anything else."
 	id = "mesons"
 	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 	build_path = /obj/item/clothing/glasses/meson
+<<<<<<< HEAD
+=======
+	sort_string = "GBAAA"
+
+/datum/design/item/optical/material
+	name = "material"
+	id = "mesons_material"
+	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
+	build_path = /obj/item/clothing/glasses/material
+	sort_string = "GAAAB"
+
+/datum/design/item/optical/tactical
+	name = "tactical"
+	id = "tactical_goggles"
+	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 5)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50, MATERIAL_SILVER = 50, MATERIAL_GOLD = 50)
+	build_path = /obj/item/clothing/glasses/tacgoggles
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	sort_string = "GAAAC"
 
 /datum/design/item/weapon/mining/AssembleDesignName()
@@ -315,35 +334,40 @@ other types of metals and chemistry for reagents).
 /datum/design/item/weapon/mining/jackhammer
 	id = "jackhammer"
 	req_tech = list(TECH_MATERIAL = 3, TECH_POWER = 2, TECH_ENGINEERING = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 500, "silver" = 500)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 500, MATERIAL_SILVER = 500)
 	build_path = /obj/item/weapon/pickaxe/jackhammer
 	sort_string = "KAAAA"
 
 /datum/design/item/weapon/mining/drill
 	id = "drill"
 	req_tech = list(TECH_MATERIAL = 2, TECH_POWER = 3, TECH_ENGINEERING = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 6000, "glass" = 1000) //expensive, but no need for miners.
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_GLASS = 1000) //expensive, but no need for miners.
 	build_path = /obj/item/weapon/pickaxe/drill
 	sort_string = "KAAAB"
 
 /datum/design/item/weapon/mining/plasmacutter
 	id = "plasmacutter"
 	req_tech = list(TECH_MATERIAL = 4, TECH_PHORON = 3, TECH_ENGINEERING = 3)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 1500, "glass" = 500, "gold" = 500, "phoron" = 1500)
 	build_path = /obj/item/weapon/pickaxe/plasmacutter
+=======
+	materials = list(MATERIAL_STEEL = 1500, MATERIAL_GLASS = 500, MATERIAL_GOLD = 500, MATERIAL_PHORON = 500)
+	build_path = /obj/item/weapon/gun/energy/plasmacutter
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	sort_string = "KAAAC"
 
 /datum/design/item/weapon/mining/pick_diamond
 	id = "pick_diamond"
 	req_tech = list(TECH_MATERIAL = 6)
-	materials = list("diamond" = 3000)
+	materials = list(MATERIAL_DIAMOND = 3000)
 	build_path = /obj/item/weapon/pickaxe/diamond
 	sort_string = "KAAAD"
 
 /datum/design/item/weapon/mining/drill_diamond
 	id = "drill_diamond"
 	req_tech = list(TECH_MATERIAL = 6, TECH_POWER = 4, TECH_ENGINEERING = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 3000, "glass" = 1000, "diamond" = 2000)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 2000)
 	build_path = /obj/item/weapon/pickaxe/diamonddrill
 	sort_string = "KAAAE"
 
@@ -351,22 +375,33 @@ other types of metals and chemistry for reagents).
 	desc = "Used to check spatial depth and density of rock outcroppings."
 	id = "depth_scanner"
 	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 1000,"glass" = 1000)
+	materials = list(MATERIAL_STEEL = 1000,MATERIAL_GLASS = 1000)
 	build_path = /obj/item/device/depth_scanner
 	sort_string = "KAAAF"
 
 /datum/design/item/medical
-	materials = list(DEFAULT_WALL_MATERIAL = 30, "glass" = 20)
+	materials = list(MATERIAL_STEEL = 30, MATERIAL_GLASS = 20)
 
 /datum/design/item/medical/AssembleDesignName()
 	..()
 	name = "Biotech device prototype ([item_name])"
 
+<<<<<<< HEAD
+=======
+/datum/design/item/medical/slime_scanner
+	desc = "Multipurpose organic life scanner."
+	id = "slime_scanner"
+	req_tech = list(TECH_MAGNET = 2, TECH_BIO = 2)
+	materials = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 100)
+	build_path = /obj/item/device/slime_scanner
+	sort_string = "MACFA"
+
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /datum/design/item/medical/robot_scanner
 	desc = "A hand-held scanner able to diagnose robotic injuries."
 	id = "robot_scanner"
 	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 500, "glass" = 200)
+	materials = list(MATERIAL_STEEL = 500, MATERIAL_GLASS = 200)
 	build_path = /obj/item/device/robotanalyzer
 	sort_string = "MACFA"
 
@@ -423,16 +458,32 @@ other types of metals and chemistry for reagents).
 	desc = "A tube of paste containing swarms of repair nanites. Very effective in repairing robotic machinery."
 	id = "nanopaste"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 7000, "glass" = 7000)
+	materials = list(MATERIAL_STEEL = 7000, MATERIAL_GLASS = 7000)
 	build_path = /obj/item/stack/nanopaste
+<<<<<<< HEAD
 	sort_string = "MBAAA"
+=======
+	sort_string = "MADAA"
+
+/datum/design/item/medical/hypospray
+	desc = "A sterile, air-needle autoinjector for rapid administration of drugs"
+	id = "hypospray"
+	req_tech = list(TECH_MATERIAL = 4, TECH_BIO = 5)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_GLASS = 8000, MATERIAL_SILVER = 2000)
+	build_path = /obj/item/weapon/reagent_containers/hypospray/vial
+	sort_string = "MAEAA"
+
+/datum/design/item/surgery/AssembleDesignName()
+	..()
+	name = "Surgical tool design ([item_name])"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/scalpel_laser1
 	name = "Basic Laser Scalpel"
 	desc = "A scalpel augmented with a directed laser, for more precise cutting without blood entering the field. This one looks basic and could be improved."
 	id = "scalpel_laser1"
 	req_tech = list(TECH_BIO = 2, TECH_MATERIAL = 2, TECH_MAGNET = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 12500, "glass" = 7500)
+	materials = list(MATERIAL_STEEL = 12500, MATERIAL_GLASS = 7500)
 	build_path = /obj/item/weapon/scalpel/laser1
 	sort_string = "MBBAA"
 
@@ -441,7 +492,7 @@ other types of metals and chemistry for reagents).
 	desc = "A scalpel augmented with a directed laser, for more precise cutting without blood entering the field. This one looks somewhat advanced."
 	id = "scalpel_laser2"
 	req_tech = list(TECH_BIO = 3, TECH_MATERIAL = 4, TECH_MAGNET = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 12500, "glass" = 7500, "silver" = 2500)
+	materials = list(MATERIAL_STEEL = 12500, MATERIAL_GLASS = 7500, MATERIAL_SILVER = 2500)
 	build_path = /obj/item/weapon/scalpel/laser2
 	sort_string = "MBBAB"
 
@@ -450,7 +501,7 @@ other types of metals and chemistry for reagents).
 	desc = "A scalpel augmented with a directed laser, for more precise cutting without blood entering the field. This one looks to be the pinnacle of precision energy cutlery!"
 	id = "scalpel_laser3"
 	req_tech = list(TECH_BIO = 4, TECH_MATERIAL = 6, TECH_MAGNET = 5)
-	materials = list(DEFAULT_WALL_MATERIAL = 12500, "glass" = 7500, "silver" = 2000, "gold" = 1500)
+	materials = list(MATERIAL_STEEL = 12500, MATERIAL_GLASS = 7500, MATERIAL_SILVER = 2000, MATERIAL_GOLD = 1500)
 	build_path = /obj/item/weapon/scalpel/laser3
 	sort_string = "MBBAC"
 
@@ -459,12 +510,37 @@ other types of metals and chemistry for reagents).
 	desc = "A true extension of the surgeon's body, this marvel instantly and completely prepares an incision allowing for the immediate commencement of therapeutic steps."
 	id = "scalpel_manager"
 	req_tech = list(TECH_BIO = 4, TECH_MATERIAL = 7, TECH_MAGNET = 5, TECH_DATA = 4)
-	materials = list (DEFAULT_WALL_MATERIAL = 12500, "glass" = 7500, "silver" = 1500, "gold" = 1500, "diamond" = 750)
+	materials = list (MATERIAL_STEEL = 12500, MATERIAL_GLASS = 7500, MATERIAL_SILVER = 1500, MATERIAL_GOLD = 1500, MATERIAL_DIAMOND = 750)
 	build_path = /obj/item/weapon/scalpel/manager
+<<<<<<< HEAD
 	sort_string = "MBBAD"
+=======
+	sort_string = "MBEAD"
+
+/datum/design/item/beaker/AssembleDesignName()
+	name = "Beaker prototype ([item_name])"
+
+/datum/design/item/beaker/noreact
+	name = "cryostasis"
+	desc = "A cryostasis beaker that allows for chemical storage without reactions. Can hold up to 50 units."
+	id = "splitbeaker"
+	req_tech = list(TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 3000)
+	build_path = /obj/item/weapon/reagent_containers/glass/beaker/noreact
+	sort_string = "MCAAA"
+
+/datum/design/item/beaker/bluespace
+	name = TECH_BLUESPACE
+	desc = "A bluespace beaker, powered by experimental bluespace technology and Element Cuban combined with the Compound Pete. Can hold up to 300 units."
+	id = "bluespacebeaker"
+	req_tech = list(TECH_BLUESPACE = 2, TECH_MATERIAL = 6)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_PHORON = 3000, MATERIAL_DIAMOND = 500)
+	build_path = /obj/item/weapon/reagent_containers/glass/beaker/bluespace
+	sort_string = "MCAAB"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/implant
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
+	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 
 /datum/design/item/implant/AssembleDesignName()
 	..()
@@ -495,17 +571,88 @@ other types of metals and chemistry for reagents).
 			desc = initial(I.desc)
 		..()
 
+<<<<<<< HEAD
 /datum/design/item/weapon/stunrevolver
 	id = "stunrevolver"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 8000)
 	build_path = /obj/item/weapon/gun/energy/stunrevolver
 	sort_string = "TAAAA"
+=======
+/datum/design/item/weapon/chemsprayer
+	desc = "An advanced chem spraying device."
+	id = "chemsprayer"
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_BIO = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/reagent_containers/spray/chemsprayer
+	sort_string = "TAAAA"
+
+/datum/design/item/weapon/rapidsyringe
+	id = "rapidsyringe"
+	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_BIO = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/gun/launcher/syringe/rapid
+	sort_string = "TAAAB"
+
+/datum/design/item/weapon/temp_gun
+	desc = "A gun that shoots high-powered glass-encased energy temperature bullets."
+	id = "temp_gun"
+	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 4, TECH_POWER = 3, TECH_MAGNET = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 500, MATERIAL_SILVER = 3000)
+	build_path = /obj/item/weapon/gun/energy/temperature
+	sort_string = "TAAAC"
+
+/datum/design/item/weapon/large_grenade
+	id = "large_Grenade"
+	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 3000)
+	build_path = /obj/item/weapon/grenade/chem_grenade/large
+	sort_string = "TABAA"
+
+/datum/design/item/weapon/anti_photon
+	id = "anti_photon"
+	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 4)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 1000)
+	build_path = /obj/item/weapon/grenade/anti_photon
+	sort_string = "TABAB"
+
+/datum/design/item/weapon/flora_gun
+	id = "flora_gun"
+	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_POWER = 3)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 500, MATERIAL_URANIUM = 500)
+	build_path = /obj/item/weapon/gun/energy/floragun
+	sort_string = "TACAA"
+
+/datum/design/item/weapon/advancedflash
+	id = "advancedflash"
+	req_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 2000, MATERIAL_SILVER = 500)
+	build_path = /obj/item/device/flash/advanced
+	sort_string = "TADAA"
+
+/datum/design/item/weapon/stunrevolver
+	id = "stunrevolver"
+	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 2)
+	materials = list(MATERIAL_STEEL = 4000)
+	build_path = /obj/item/weapon/gun/energy/stunrevolver
+	sort_string = "TADAB"
+
+/datum/design/item/weapon/stunrifle
+	id = "stun_rifle"
+	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+	materials = list(MATERIAL_STEEL = 4000, MATERIAL_GLASS = 1000, MATERIAL_SILVER = 500)
+	build_path = /obj/item/weapon/gun/energy/stunrevolver/rifle
+	sort_string = "TADAC"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/weapon/nuclear_gun
 	id = "nuclear_gun"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 3000, "uranium" = 1500)
+=======
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_URANIUM = 500)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/gun/energy/gun/nuclear
 	sort_string = "TAAAB"
 
@@ -513,35 +660,101 @@ other types of metals and chemistry for reagents).
 	desc = "The lasing medium of this prototype is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core."
 	id = "lasercannon"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 3000, "diamond" = 4000)
 	build_path = /obj/item/weapon/gun/energy/lasercannon
 	sort_string = "TAAAC"
+=======
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 2000)
+	build_path = /obj/item/weapon/gun/energy/lasercannon
+	sort_string = "TAEAB"
+
+/datum/design/item/weapon/xraypistol
+	id = "xraypistol"
+	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_MAGNET = 2, TECH_ILLEGAL = 2)
+	materials = list(MATERIAL_STEEL = 4000, MATERIAL_GLASS = 500, MATERIAL_URANIUM = 500)
+	build_path = /obj/item/weapon/gun/energy/xray/pistol
+	sort_string = "TAFAA"
+
+/datum/design/item/weapon/xrayrifle
+	id = "xrayrifle"
+	req_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3, TECH_MAGNET = 2, TECH_ILLEGAL = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_URANIUM = 1000)
+	build_path = /obj/item/weapon/gun/energy/xray
+	sort_string = "TAFAB"
+
+/datum/design/item/weapon/grenadelauncher
+	id = "grenadelauncher"
+	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/gun/launcher/grenade
+	sort_string = "TAGAA"
+
+/datum/design/item/weapon/flechette
+	id = "flechette"
+	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 4, TECH_MAGNET = 4)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_GOLD = 4000, MATERIAL_SILVER = 4000, MATERIAL_DIAMOND = 2000)
+	build_path = /obj/item/weapon/gun/magnetic/railgun/flechette
+	sort_string = "TAHAA"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/weapon/phoronpistol
 	id = "ppistol"
 	req_tech = list(TECH_COMBAT = 5, TECH_PHORON = 4)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 2000, "phoron" = 5000)
+=======
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_PHORON = 3000)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/gun/energy/toxgun
 	sort_string = "TAAAD"
 
 /datum/design/item/weapon/decloner
 	id = "decloner"
 	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 7, TECH_BIO = 5, TECH_POWER = 6)
+<<<<<<< HEAD
 	materials = list("gold" = 7000,"uranium" = 13000, "mutagen" = 50)
+=======
+	materials = list(MATERIAL_GOLD = 5000,MATERIAL_URANIUM = 10000, "mutagen" = 40)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/gun/energy/decloner
 	sort_string = "TAAAE"
 
 /datum/design/item/weapon/smg
 	id = "smg"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 8000, "silver" = 4000, "diamond" = 2500)
 	build_path = /obj/item/weapon/gun/projectile/automatic
 	sort_string = "TAABA"
+=======
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 2000, MATERIAL_DIAMOND = 1000)
+	build_path = /obj/item/weapon/gun/projectile/automatic
+	sort_string = "TAPAA"
+
+/datum/design/item/weapon/wt550
+	id = "wt550"
+	req_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 3000, MATERIAL_DIAMOND = 1500)
+	build_path = /obj/item/weapon/gun/projectile/automatic/wt550
+	sort_string = "TAPAB"
+
+/datum/design/item/weapon/bullpup
+	id = "bullpup"
+	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 5000, MATERIAL_DIAMOND = 3000)
+	build_path = /obj/item/weapon/gun/projectile/automatic/z8
+	sort_string = "TAPAC"
+
+/datum/design/item/weapon/ammunition/AssembleDesignName()
+	..()
+	name = "Ammunition prototype ([item_name])"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/weapon/ammo_9mm
 	id = "ammo_9mm"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 3750, "silver" = 100)
+	materials = list(MATERIAL_STEEL = 3750, MATERIAL_SILVER = 100)
 	build_path = /obj/item/ammo_magazine/box/c9mm
 	sort_string = "TAACA"
 
@@ -549,14 +762,14 @@ other types of metals and chemistry for reagents).
 	desc = "A stunning shell for a shotgun."
 	id = "stunshell"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000)
+	materials = list(MATERIAL_STEEL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/stunshell
 	sort_string = "TAACB"
 
 /datum/design/item/weapon/ammo_emp_38
 	id = "ammo_emp_38"
 	desc = "A .38 round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
+	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp
 	sort_string = "TAACC"
@@ -564,7 +777,7 @@ other types of metals and chemistry for reagents).
 /datum/design/item/weapon/ammo_emp_45
 	id = "ammo_emp_45"
 	desc = "A .45 round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
+	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp/c45
 	sort_string = "TAACD"
@@ -572,7 +785,7 @@ other types of metals and chemistry for reagents).
 /datum/design/item/weapon/ammo_emp_10
 	id = "ammo_emp_10"
 	desc = "A .10mm round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
+	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp/a10mm
 	sort_string = "TAACE"
@@ -580,7 +793,7 @@ other types of metals and chemistry for reagents).
 /datum/design/item/weapon/ammo_emp_slug
 	id = "ammo_emp_slug"
 	desc = "A shotgun slug with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 3000, "uranium" = 1000)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_URANIUM = 1000)
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_casing/shotgun/emp
 	sort_string = "TAACF"
@@ -625,49 +838,49 @@ other types of metals and chemistry for reagents).
 /datum/design/item/stock_part/subspace_ansible
 	id = "s-ansible"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 80, "silver" = 20)
+	materials = list(MATERIAL_STEEL = 80, MATERIAL_SILVER = 20)
 	build_path = /obj/item/weapon/stock_parts/subspace/ansible
 	sort_string = "UAAAA"
 
 /datum/design/item/stock_part/hyperwave_filter
 	id = "s-filter"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 40, "silver" = 10)
+	materials = list(MATERIAL_STEEL = 40, MATERIAL_SILVER = 10)
 	build_path = /obj/item/weapon/stock_parts/subspace/filter
 	sort_string = "UAAAB"
 
 /datum/design/item/stock_part/subspace_amplifier
 	id = "s-amplifier"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "gold" = 30, "uranium" = 15)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_GOLD = 30, MATERIAL_URANIUM = 15)
 	build_path = /obj/item/weapon/stock_parts/subspace/amplifier
 	sort_string = "UAAAC"
 
 /datum/design/item/stock_part/subspace_treatment
 	id = "s-treatment"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 2, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "silver" = 20)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 20)
 	build_path = /obj/item/weapon/stock_parts/subspace/treatment
 	sort_string = "UAAAD"
 
 /datum/design/item/stock_part/subspace_analyzer
 	id = "s-analyzer"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 10, "gold" = 15)
+	materials = list(MATERIAL_STEEL = 10, MATERIAL_GOLD = 15)
 	build_path = /obj/item/weapon/stock_parts/subspace/analyzer
 	sort_string = "UAAAE"
 
 /datum/design/item/stock_part/subspace_crystal
 	id = "s-crystal"
 	req_tech = list(TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	materials = list("glass" = 1000, "silver" = 20, "gold" = 20)
+	materials = list(MATERIAL_GLASS = 1000, MATERIAL_SILVER = 20, MATERIAL_GOLD = 20)
 	build_path = /obj/item/weapon/stock_parts/subspace/crystal
 	sort_string = "UAAAF"
 
 /datum/design/item/stock_part/subspace_transmitter
 	id = "s-transmitter"
 	req_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 5, TECH_BLUESPACE = 3)
-	materials = list("glass" = 100, "silver" = 10, "uranium" = 15)
+	materials = list(MATERIAL_GLASS = 100, MATERIAL_SILVER = 10, MATERIAL_URANIUM = 15)
 	build_path = /obj/item/weapon/stock_parts/subspace/transmitter
 	sort_string = "UAAAG"
 
@@ -693,7 +906,7 @@ other types of metals and chemistry for reagents).
 	name = "'pAI', personal artificial intelligence device"
 	id = "paicard"
 	req_tech = list(TECH_DATA = 2)
-	materials = list("glass" = 500, DEFAULT_WALL_MATERIAL = 500)
+	materials = list(MATERIAL_GLASS = 500, MATERIAL_STEEL = 500)
 	build_path = /obj/item/device/paicard
 	sort_string = "VABAI"
 
@@ -702,7 +915,7 @@ other types of metals and chemistry for reagents).
 	desc = "Allows for the construction of an inteliCard."
 	id = "intelicard"
 	req_tech = list(TECH_DATA = 4, TECH_MATERIAL = 4)
-	materials = list("glass" = 1000, "gold" = 200)
+	materials = list(MATERIAL_GLASS = 1000, MATERIAL_GOLD = 200)
 	build_path = /obj/item/weapon/aicard
 	sort_string = "VACAA"
 
@@ -711,6 +924,7 @@ other types of metals and chemistry for reagents).
 	id = "posibrain"
 	req_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 6, TECH_BLUESPACE = 2, TECH_DATA = 4)
 	build_type = PROTOLATHE | MECHFAB
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 1000, "silver" = 1000, "gold" = 500, "phoron" = 2100, "diamond" = 100)
 	build_path = /obj/item/device/mmi/digital/posibrain
 	category = "Misc"
@@ -718,10 +932,30 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/mmi
 	name = "Man-machine interface"
+=======
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000, MATERIAL_SILVER = 1000, MATERIAL_GOLD = 500, MATERIAL_PHORON = 500, MATERIAL_DIAMOND = 100)
+	build_path = /obj/item/organ/internal/posibrain
+	category = "Misc"
+	sort_string = "VACAB"
+
+/datum/design/item/biostorage/AssembleDesignName()
+	..()
+	name = "Biological intelligence storage ([item_name])"
+
+/datum/design/item/biostorage/neural_lace
+	id = "neural lace"
+	req_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
+	materials = list (MATERIAL_STEEL = 10000, MATERIAL_GLASS = 7500, MATERIAL_SILVER = 1000, MATERIAL_GOLD = 1000)
+	build_path = /obj/item/organ/internal/stack
+	sort_string = "VACBA"
+
+/datum/design/item/biostorage/mmi
+	name = "man-machine interface"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	id = "mmi"
 	req_tech = list(TECH_DATA = 2, TECH_BIO = 3)
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500)
+	materials = list(MATERIAL_STEEL = 1000, MATERIAL_GLASS = 500)
 	build_path = /obj/item/device/mmi
 	category = "Misc"
 	sort_string = "VACBA"
@@ -731,7 +965,7 @@ other types of metals and chemistry for reagents).
 	id = "mmi_radio"
 	req_tech = list(TECH_DATA = 2, TECH_BIO = 4)
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(DEFAULT_WALL_MATERIAL = 1200, "glass" = 500)
+	materials = list(MATERIAL_STEEL = 1200, MATERIAL_GLASS = 500)
 	build_path = /obj/item/device/mmi/radio_enabled
 	category = "Misc"
 	sort_string = "VACBB"
@@ -740,7 +974,7 @@ other types of metals and chemistry for reagents).
 	name = "Bluespace tracking beacon design"
 	id = "beacon"
 	req_tech = list(TECH_BLUESPACE = 1)
-	materials = list (DEFAULT_WALL_MATERIAL = 20, "glass" = 10)
+	materials = list (MATERIAL_STEEL = 20, MATERIAL_GLASS = 10)
 	build_path = /obj/item/device/radio/beacon
 	sort_string = "VADAA"
 
@@ -749,7 +983,7 @@ other types of metals and chemistry for reagents).
 	desc = "Triangulates approximate co-ordinates using a nearby satellite network."
 	id = "gps"
 	req_tech = list(TECH_MATERIAL = 2, TECH_DATA = 2, TECH_BLUESPACE = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 500)
+	materials = list(MATERIAL_STEEL = 500)
 	build_path = /obj/item/device/gps
 	sort_string = "VADAB"
 
@@ -758,25 +992,138 @@ other types of metals and chemistry for reagents).
 	desc = "Used to scan and locate signals on a particular frequency."
 	id = "beacon_locator"
 	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 2, TECH_BLUESPACE = 3)
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 1000,"glass" = 500)
 	build_path = /obj/item/device/beacon_locator
 	sort_string = "VADAC"
 
 /datum/design/item/bag_holding
 	name = "'Bag of Holding', an infinite capacity bag prototype"
+=======
+	materials = list(MATERIAL_STEEL = 1000,MATERIAL_GLASS = 500)
+	build_path = /obj/item/weapon/pinpointer/radio
+	sort_string = "VADAC"
+
+/datum/design/item/bluespace/ano_scanner
+	name = "Alden-Saraspova counter"
+	id = "ano_scanner"
+	desc = "Aids in triangulation of exotic particles."
+	req_tech = list(TECH_BLUESPACE = 3, TECH_MAGNET = 3)
+	materials = list(MATERIAL_STEEL = 10000,MATERIAL_GLASS = 5000)
+	build_path = /obj/item/device/ano_scanner
+	sort_string = "VAEAA"
+
+/datum/design/item/bluespace/bag_holding
+	name = "Bag of Holding"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
 	id = "bag_holding"
 	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6)
-	materials = list("gold" = 3000, "diamond" = 1500, "uranium" = 250)
+	materials = list(MATERIAL_GOLD = 3000, MATERIAL_DIAMOND = 1500, MATERIAL_URANIUM = 250)
 	build_path = /obj/item/weapon/storage/backpack/holding
+<<<<<<< HEAD
 	sort_string = "VAEAA"
+=======
+	sort_string = "VAFAA"
+
+// tools
+
+/datum/design/item/tool/AssembleDesignName()
+	..()
+	name = "Tool design ([item_name])"
+
+/datum/design/item/tool/light_replacer
+	name = "light replacer"
+	desc = "A device to automatically replace lights. Refill with working lightbulbs."
+	id = "light_replacer"
+	req_tech = list(TECH_MAGNET = 3, TECH_MATERIAL = 4)
+	materials = list(MATERIAL_STEEL = 1500, MATERIAL_SILVER = 150, MATERIAL_GLASS = 3000)
+	build_path = /obj/item/device/lightreplacer
+	sort_string = "VAGAB"
+
+/datum/design/item/tool/airlock_brace
+	name = "airlock brace"
+	desc = "Special door attachment that can be used to provide extra security."
+	id = "brace"
+	req_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 50)
+	build_path = /obj/item/weapon/airlock_brace
+	sort_string = "VAGAC"
+
+/datum/design/item/tool/brace_jack
+	name = "maintenance jack"
+	desc = "A special maintenance tool that can be used to remove airlock braces."
+	id = "bracejack"
+	req_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 120)
+	build_path = /obj/item/weapon/crowbar/brace_jack
+	sort_string = "VAGAD"
+
+/datum/design/item/tool/clamp
+	name = "stasis clamp"
+	desc = "A magnetic clamp which can halt the flow of gas in a pipe, via a localised stasis field."
+	id = "stasis_clamp"
+	req_tech = list(TECH_ENGINEERING = 4, TECH_MAGNET = 4)
+	materials = list(MATERIAL_STEEL = 500, MATERIAL_GLASS = 500)
+	build_path = /obj/item/clamp
+	sort_string = "VAGAE"
+
+/datum/design/item/tool/inducer
+	name = "inducer"
+	desc = "An electromagnetic inducer that can transfer power from one cell into another."
+	id = "inducer"
+	req_tech = list(TECH_POWER = 6, TECH_ENGINEERING = 4)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 100)
+	build_path = /obj/item/inducer
+
+/datum/design/item/tool/price_scanner
+	name = "price scanner"
+	desc = "Using an up-to-date database of various costs and prices, this device estimates the market price of an item up to 0.001% accuracy."
+	id = "price_scanner"
+	req_tech = list(TECH_MATERIAL = 6, TECH_MAGNET = 4)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 3000, MATERIAL_SILVER = 250)
+	build_path = /obj/item/device/price_scanner
+	sort_string = "VAGAF"
+
+/datum/design/item/tool/experimental_welder
+	name = "experimental welding tool"
+	desc = "This welding tool feels heavier in your possession than is normal. There appears to be no external fuel port."
+	id = "experimental_welder"
+	req_tech = list(TECH_ENGINEERING = 5, TECH_PHORON = 4)
+	materials = list(MATERIAL_STEEL = 120, MATERIAL_GLASS = 50)
+	build_path = /obj/item/weapon/weldingtool/experimental
+	sort_string = "VAGAG"
+
+/datum/design/item/tool/shield_diffuser
+	name = "portable shield diffuser"
+	desc = "A small handheld device designed to disrupt energy barriers."
+	id = "portable_shield_diffuser"
+	req_tech = list(TECH_MAGNET = 5, TECH_POWER = 5, TECH_ILLEGAL = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 5000, MATERIAL_GOLD = 2000, MATERIAL_SILVER = 2000)
+	build_path = /obj/item/weapon/shield_diffuser
+	sort_string = "VAGAH"
+
+/datum/design/item/tool/oxycandle
+	name = "oxycandle"
+	desc = "a device which, via a chemical reaction, can pressurise small areas."
+	id="oxycandle"
+	req_tech = list(TECH_ENGINEERING = 2)
+	materials = list(MATERIAL_STEEL = 3000)
+	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
+	build_path = /obj/item/device/oxycandle
+	sort_string = "VAGAI"
+
+/datum/design/item/encryptionkey/AssembleDesignName()
+	..()
+	name = "Encryption key design ([item_name])"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/binaryencrypt
 	name = "Binary encryption key"
 	desc = "Allows for deciphering the binary channel on-the-fly."
 	id = "binaryencrypt"
 	req_tech = list(TECH_ILLEGAL = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 300, "glass" = 300)
+	materials = list(MATERIAL_STEEL = 300, MATERIAL_GLASS = 300)
 	build_path = /obj/item/device/encryptionkey/binary
 	sort_string = "VASAA"
 
@@ -785,10 +1132,44 @@ other types of metals and chemistry for reagents).
 	desc = "A kit of dangerous, high-tech equipment with changeable looks."
 	id = "chameleon"
 	req_tech = list(TECH_ILLEGAL = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 500)
+	materials = list(MATERIAL_STEEL = 500)
 	build_path = /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 	sort_string = "VASBA"
 
+<<<<<<< HEAD
+=======
+// Superconductive magnetic coils
+/datum/design/item/smes_coil/AssembleDesignName()
+	..()
+	name = "Superconductive magnetic coil ([item_name])"
+
+/datum/design/item/smes_coil
+	desc = "A superconductive magnetic coil used to store power in magnetic fields."
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 2000, MATERIAL_GOLD = 1000, MATERIAL_SILVER = 1000)
+
+/datum/design/item/smes_coil/standard
+	name = "standard"
+	id = "smes_coil_standard"
+	req_tech = list(TECH_MATERIAL = 7, TECH_POWER = 7, TECH_ENGINEERING = 5)
+	build_path = /obj/item/weapon/smes_coil
+	sort_string = "VAXAA"
+
+/datum/design/item/smes_coil/super_capacity
+	name = "capacitance"
+	id = "smes_coil_super_capacity"
+	req_tech = list(TECH_MATERIAL = 7, TECH_POWER = 8, TECH_ENGINEERING = 6)
+	build_path = /obj/item/weapon/smes_coil/super_capacity
+	sort_string = "VAXAB"
+
+/datum/design/item/smes_coil/super_io
+	name = "transmission"
+	id = "smes_coil_super_io"
+	req_tech = list(TECH_MATERIAL = 7, TECH_POWER = 8, TECH_ENGINEERING = 6)
+	build_path = /obj/item/weapon/smes_coil/super_io
+	sort_string = "VAXAC"
+
+
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 // Modular computer components
 // Hard drives
 /datum/design/item/modularcomponent/disk/normal
@@ -796,7 +1177,7 @@ other types of metals and chemistry for reagents).
 	id = "hdd_basic"
 	req_tech = list(TECH_DATA = 1, TECH_ENGINEERING = 1)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 400, "glass" = 100)
+	materials = list(MATERIAL_STEEL = 400, MATERIAL_GLASS = 100)
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/
 	sort_string = "VBAAA"
 
@@ -805,7 +1186,7 @@ other types of metals and chemistry for reagents).
 	id = "hdd_advanced"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 800, "glass" = 200)
+	materials = list(MATERIAL_STEEL = 800, MATERIAL_GLASS = 200)
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/advanced
 	sort_string = "VBAAB"
 
@@ -814,7 +1195,7 @@ other types of metals and chemistry for reagents).
 	id = "hdd_super"
 	req_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 1600, "glass" = 400)
+	materials = list(MATERIAL_STEEL = 1600, MATERIAL_GLASS = 400)
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/super
 	sort_string = "VBAAC"
 
@@ -823,16 +1204,28 @@ other types of metals and chemistry for reagents).
 	id = "hdd_cluster"
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 4)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 3200, "glass" = 800)
+	materials = list(MATERIAL_STEEL = 3200, MATERIAL_GLASS = 800)
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/cluster
 	sort_string = "VBAAD"
 
+<<<<<<< HEAD
+=======
+/datum/design/item/modularcomponent/disk/micro
+	name = "micro hard drive"
+	id = "hdd_micro"
+	req_tech = list(TECH_DATA = 1, TECH_ENGINEERING = 1)
+	build_type = PROTOLATHE
+	materials = list(MATERIAL_STEEL = 400, MATERIAL_GLASS = 100)
+	build_path = /obj/item/weapon/computer_hardware/hard_drive/micro
+	sort_string = "VBAAE"
+
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /datum/design/item/modularcomponent/disk/small
 	name = "small hard drive"
 	id = "hdd_small"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 800, "glass" = 200)
+	materials = list(MATERIAL_STEEL = 800, MATERIAL_GLASS = 200)
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/small
 	sort_string = "VBAAE"
 
@@ -851,8 +1244,13 @@ other types of metals and chemistry for reagents).
 	id = "netcard_basic"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 1)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 250, "glass" = 100)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_STEEL = 250, MATERIAL_GLASS = 100)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/network_card
 	sort_string = "VBAAG"
 
@@ -861,8 +1259,13 @@ other types of metals and chemistry for reagents).
 	id = "netcard_advanced"
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 2)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 500, "glass" = 200)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_STEEL = 500, MATERIAL_GLASS = 200)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/network_card/advanced
 	sort_string = "VBAAH"
 
@@ -871,8 +1274,13 @@ other types of metals and chemistry for reagents).
 	id = "netcard_wired"
 	req_tech = list(TECH_DATA = 5, TECH_ENGINEERING = 3)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 2500, "glass" = 400)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_STEEL = 2500, MATERIAL_GLASS = 400)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/network_card/wired
 	sort_string = "VBAAI"
 
@@ -882,8 +1290,13 @@ other types of metals and chemistry for reagents).
 	id = "portadrive_basic"
 	req_tech = list(TECH_DATA = 1)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list("glass" = 800)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_GLASS = 800)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/portable
 	sort_string = "VBAAJ"
 
@@ -892,8 +1305,13 @@ other types of metals and chemistry for reagents).
 	id = "portadrive_advanced"
 	req_tech = list(TECH_DATA = 2)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list("glass" = 1600)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_GLASS = 1600)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/portable/advanced
 	sort_string = "VBAAK"
 
@@ -902,8 +1320,13 @@ other types of metals and chemistry for reagents).
 	id = "portadrive_super"
 	req_tech = list(TECH_DATA = 4)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list("glass" = 3200)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_GLASS = 3200)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/hard_drive/portable/super
 	sort_string = "VBAAL"
 
@@ -913,9 +1336,24 @@ other types of metals and chemistry for reagents).
 	id = "cardslot"
 	req_tech = list(TECH_DATA = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 600)
+	materials = list(MATERIAL_STEEL = 600)
 	build_path = /obj/item/weapon/computer_hardware/card_slot
+<<<<<<< HEAD
 	sort_string = "VBAAM"
+=======
+	sort_string = "VBADA"
+
+// inteliCard Slot
+/datum/design/item/modularcomponent/accessory/aislot
+	name = "inteliCard slot"
+	id = "aislot"
+	req_tech = list(TECH_POWER = 2, TECH_DATA = 3)
+	build_type = IMPRINTER
+	materials = list(MATERIAL_STEEL = 2000)
+	chemicals = list(/datum/reagent/acid = 20)
+	build_path = /obj/item/weapon/computer_hardware/ai_slot
+	sort_string = "VBADB"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 // Nano printer
 /datum/design/item/modularcomponent/nanoprinter
@@ -923,7 +1361,7 @@ other types of metals and chemistry for reagents).
 	id = "nanoprinter"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 600)
+	materials = list(MATERIAL_STEEL = 600)
 	build_path = /obj/item/weapon/computer_hardware/nano_printer
 	sort_string = "VBAAN"
 
@@ -933,9 +1371,50 @@ other types of metals and chemistry for reagents).
 	id = "teslalink"
 	req_tech = list(TECH_DATA = 2, TECH_POWER = 3, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 2000)
+	materials = list(MATERIAL_STEEL = 2000)
 	build_path = /obj/item/weapon/computer_hardware/tesla_link
+<<<<<<< HEAD
 	sort_string = "VBAAO"
+=======
+	sort_string = "VBADD"
+
+//Scanners
+/datum/design/item/modularcomponent/accessory/reagent_scanner
+	name = "reagent scanner module"
+	id = "scan_reagent"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_BIO = 2, TECH_MAGNET = 2)
+	build_type = PROTOLATHE
+	materials = list(MATERIAL_STEEL = 600, MATERIAL_GLASS = 200)
+	build_path = /obj/item/weapon/computer_hardware/scanner/reagent
+	sort_string = "VBADE"
+
+/datum/design/item/modularcomponent/accessory/paper_scanner
+	name = "paper scanner module"
+	id = "scan_paper"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	build_type = PROTOLATHE
+	materials = list(MATERIAL_STEEL = 600, MATERIAL_GLASS = 200)
+	build_path = /obj/item/weapon/computer_hardware/scanner/paper
+	sort_string = "VBADF"
+
+/datum/design/item/modularcomponent/accessory/atmos_scanner
+	name = "atmospheric scanner module"
+	id = "scan_atmos"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_MAGNET = 2)
+	build_type = PROTOLATHE
+	materials = list(MATERIAL_STEEL = 600, MATERIAL_GLASS = 200)
+	build_path = /obj/item/weapon/computer_hardware/scanner/atmos
+	sort_string = "VBADG"
+
+/datum/design/item/modularcomponent/accessory/medical_scanner
+	name = "medical scanner module"
+	id = "scan_medical"
+	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_MAGNET = 2, TECH_BIO = 2)
+	build_type = PROTOLATHE
+	materials = list(MATERIAL_STEEL = 600, MATERIAL_GLASS = 200)
+	build_path = /obj/item/weapon/computer_hardware/scanner/medical
+	sort_string = "VBADH"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 // Batteries
 /datum/design/item/modularcomponent/battery/normal
@@ -943,7 +1422,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_normal"
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 400)
+	materials = list(MATERIAL_STEEL = 400)
 	build_path = /obj/item/weapon/computer_hardware/battery_module
 	sort_string = "VBAAP"
 
@@ -952,7 +1431,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_advanced"
 	req_tech = list(TECH_POWER = 2, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 800)
+	materials = list(MATERIAL_STEEL = 800)
 	build_path = /obj/item/weapon/computer_hardware/battery_module/advanced
 	sort_string = "VBAAQ"
 
@@ -961,7 +1440,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_super"
 	req_tech = list(TECH_POWER = 3, TECH_ENGINEERING = 3)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 1600)
+	materials = list(MATERIAL_STEEL = 1600)
 	build_path = /obj/item/weapon/computer_hardware/battery_module/super
 	sort_string = "VBAAR"
 
@@ -970,7 +1449,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_ultra"
 	req_tech = list(TECH_POWER = 5, TECH_ENGINEERING = 4)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 3200)
+	materials = list(MATERIAL_STEEL = 3200)
 	build_path = /obj/item/weapon/computer_hardware/battery_module/ultra
 	sort_string = "VBAAS"
 
@@ -979,7 +1458,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_nano"
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 200)
+	materials = list(MATERIAL_STEEL = 200)
 	build_path = /obj/item/weapon/computer_hardware/battery_module/nano
 	sort_string = "VBAAT"
 
@@ -988,7 +1467,7 @@ other types of metals and chemistry for reagents).
 	id = "bat_micro"
 	req_tech = list(TECH_POWER = 2, TECH_ENGINEERING = 2)
 	build_type = PROTOLATHE
-	materials = list(DEFAULT_WALL_MATERIAL = 400)
+	materials = list(MATERIAL_STEEL = 400)
 	build_path = /obj/item/weapon/computer_hardware/battery_module/micro
 	sort_string = "VBAAU"
 
@@ -998,8 +1477,13 @@ other types of metals and chemistry for reagents).
 	id = "cpu_normal"
 	req_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 2)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 1600)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_STEEL = 1600)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/processor_unit
 	sort_string = "VBAAV"
 
@@ -1008,8 +1492,13 @@ other types of metals and chemistry for reagents).
 	id = "cpu_small"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 800)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_STEEL = 800)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/processor_unit/small
 	sort_string = "VBAAW"
 
@@ -1018,8 +1507,13 @@ other types of metals and chemistry for reagents).
 	id = "pcpu_normal"
 	req_tech = list(TECH_DATA = 5, TECH_ENGINEERING = 4)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 6400, glass = 2000)
 	chemicals = list("sacid" = 40)
+=======
+	materials = list(MATERIAL_STEEL = 6400, glass = 2000)
+	chemicals = list(/datum/reagent/acid = 40)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	build_path = /obj/item/weapon/computer_hardware/processor_unit/photonic
 	sort_string = "VBAAX"
 
@@ -1028,10 +1522,231 @@ other types of metals and chemistry for reagents).
 	id = "pcpu_small"
 	req_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 3)
 	build_type = IMPRINTER
+<<<<<<< HEAD
 	materials = list(DEFAULT_WALL_MATERIAL = 3200, glass = 1000)
 	chemicals = list("sacid" = 20)
 	build_path = /obj/item/weapon/computer_hardware/processor_unit/photonic/small
 	sort_string = "VBAAY"
+=======
+	materials = list(MATERIAL_STEEL = 3200, glass = 1000)
+	chemicals = list(/datum/reagent/acid = 20)
+	build_path = /obj/item/weapon/computer_hardware/processor_unit/photonic/small
+	sort_string = "VBAFD"
+
+//RIG Modules
+//Sidenote; Try to keep a requirement of 5 engineering for each, but keep the rest as similiar to it's original as possible.
+/datum/design/item/rig/AssembleDesignName()
+	..()
+	name = "RIG module ([item_name])"
+
+/datum/design/item/rig/meson
+	name = "Meson Scanner"
+	desc = "A layered, translucent visor system for a RIG."
+	id = "rig_meson"
+	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_STEEL = 100, MATERIAL_GLASS = 200, MATERIAL_PLASTIC = 300)
+	build_path = /obj/item/rig_module/vision/meson
+	sort_string = "WCAAA"
+
+/datum/design/item/rig/medhud
+	name = "Medical HUD"
+	desc = "A simple medical status indicator for a RIG."
+	id = "rig_medhud"
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_STEEL = 100, MATERIAL_GLASS = 200,  MATERIAL_PLASTIC = 300)
+	build_path = /obj/item/rig_module/vision/medhud
+	sort_string = "WCAAB"
+
+/datum/design/item/rig/sechud
+	name = "Security HUD"
+	desc = "A simple security status indicator for a RIG."
+	id = "rig_sechud"
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_STEEL = 100, MATERIAL_GLASS = 200,  MATERIAL_PLASTIC = 300)
+	build_path = /obj/item/rig_module/vision/sechud
+	sort_string = "WCAAC"
+
+/datum/design/item/rig/nvg
+	name = "Night Vision"
+	desc = "A night vision module, mountable on a RIG."
+	id = "rig_nvg"
+	req_tech = list(TECH_MAGNET = 6, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_PLASTIC = 500, MATERIAL_STEEL = 300, MATERIAL_GLASS = 200, MATERIAL_URANIUM = 200)
+	build_path = /obj/item/rig_module/vision/nvg
+	sort_string = "WCAAD"
+
+/datum/design/item/rig/healthscanner
+	name = "Medical Scanner"
+	desc = "A device able to distinguish vital signs of the subject, mountable on a RIG."
+	id = "rig_healthscanner"
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 3, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_PLASTIC = 1000, MATERIAL_STEEL = 700, MATERIAL_GLASS = 500)
+	build_path = /obj/item/rig_module/device/healthscanner
+	sort_string = "WCBAA"
+
+/datum/design/item/rig/drill
+	name = "Mining Drill"
+	desc = "A diamond mining drill, mountable on a RIG."
+	id = "rig_drill"
+	req_tech = list(TECH_MATERIAL = 6, TECH_POWER = 4, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 3500, MATERIAL_GLASS = 1500, MATERIAL_DIAMOND = 2000, MATERIAL_PLASTIC = 1000)
+	build_path = /obj/item/rig_module/device/drill
+	sort_string = "WCCAA"
+
+/datum/design/item/rig/plasmacutter
+	name = "Plasma Cutter"
+	desc = "A rock cutter that projects bursts of hot plasma, mountable on a RIG."
+	id = "rig_plasmacutter"
+	req_tech = list(TECH_MATERIAL = 4, TECH_PHORON = 3, TECH_ENGINEERING = 6, TECH_COMBAT = 4)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000, MATERIAL_PLASTIC = 1000, MATERIAL_GOLD = 700, MATERIAL_PHORON = 500)
+	build_path = /obj/item/rig_module/mounted/plasmacutter
+	sort_string = "VCCAB"
+
+/datum/design/item/rig/orescanner
+	name = "Ore Scanner"
+	desc = "A sonar system for detecting large masses of ore, mountable on a RIG."
+	id = "rig_orescanner"
+	req_tech = list(TECH_MATERIAL = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_PLASTIC = 1000, MATERIAL_STEEL = 800, MATERIAL_GLASS = 500)
+	build_path = /obj/item/rig_module/device/orescanner
+	sort_string = "WCDAA"
+
+/datum/design/item/rig/anomaly_scanner
+	name = "Anomaly Scanner"
+	desc = "An exotic particle detector commonly used by xenoarchaeologists, mountable on a RIG."
+	id = "rig_anomaly_scanner"
+	req_tech = list(TECH_BLUESPACE = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_PLASTIC = 1000, MATERIAL_STEEL = 800, MATERIAL_GLASS = 500)
+	build_path = /obj/item/rig_module/device/anomaly_scanner
+	sort_string = "WCDAB"
+
+/datum/design/item/rig/rcd
+	name = "RCD"
+	desc = "A Rapid Construction Device, mountable on a RIG."
+	id = "rig_rcd"
+	req_tech = list(TECH_MATERIAL = 6, TECH_MAGNET = 5, TECH_ENGINEERING = 7)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 1000, MATERIAL_PLASTIC = 1000,MATERIAL_GOLD = 700, MATERIAL_SILVER = 700)
+	build_path = /obj/item/rig_module/device/rcd
+	sort_string = "WCEAA"
+
+/datum/design/item/rig/jets
+	name = "Maneuvering Jets"
+	desc = "A compact gas thruster system, mountable on a RIG."
+	id = "rig_jets"
+	req_tech = list(TECH_MATERIAL = 6,  TECH_ENGINEERING = 7)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_PLASTIC = 2000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/rig_module/maneuvering_jets
+	sort_string = "WCFAA"
+
+//I think this is like a janitor thing but seems like it could be useful for engis
+/datum/design/item/rig/decompiler
+	name = "Matter Decompiler"
+	desc = "A drone matter decompiler reconfigured to be mounted onto a RIG."
+	id = "rig_decompiler"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_PLASTIC = 2000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/rig_module/device/decompiler
+	sort_string = "WCGAA"
+
+/datum/design/item/rig/powersink
+	name = "Power Sink"
+	desc = "A RIG module that allows the user to recharge their RIG's power cell without removing it."
+	id = "rig_powersink"
+	req_tech = list(TECH_POWER = 6, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 2000, MATERIAL_GOLD = 1000, MATERIAL_PLASTIC = 1000)
+	build_path = /obj/item/rig_module/power_sink
+	sort_string = "WCHAA"
+
+/datum/design/item/rig/ai_container
+	name = "IIS"
+	desc = "An integrated intelligence system module suitable for most RIGs."
+	id = "rig_ai_container"
+	req_tech = list(TECH_DATA = 6, TECH_MATERIAL = 5, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 1000, MATERIAL_GLASS = 1000, MATERIAL_PLASTIC = 1000, MATERIAL_GOLD = 500)
+	build_path = /obj/item/rig_module/ai_container
+	sort_string = "WCIAA"
+
+/datum/design/item/rig/flash
+	name = "Flash"
+	desc = "A normal flash, mountable on a RIG."
+	id = "rig_flash"
+	req_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 3, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_PLASTIC = 1500, MATERIAL_STEEL = 1000, MATERIAL_GLASS = 500)
+	build_path = /obj/item/rig_module/device/flash
+	sort_string = "WCJAA"
+
+/datum/design/item/rig/taser
+	name = "Taser"
+	desc = "A taser, mountable on a RIG."
+	id = "rig_taser"
+	req_tech = list(TECH_POWER = 5, TECH_COMBAT = 5, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 4000, MATERIAL_PLASTIC = 2500, MATERIAL_GLASS = 2000, MATERIAL_GOLD = 1000)
+	build_path = /obj/item/rig_module/mounted/taser
+	sort_string = "WCKAA"
+
+/datum/design/item/rig/egun
+	name = "Energy Gun"
+	desc = "An energy gun, mountable on a RIG."
+	id = "rig_egun"
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_GLASS = 3000, MATERIAL_PLASTIC = 2500, MATERIAL_GOLD = 2000, MATERIAL_SILVER = 1000)
+	build_path = /obj/item/rig_module/mounted/egun
+	sort_string = "WCKAB"
+
+/datum/design/item/rig/enet
+	name = "Energy Net"
+	desc = "An advanced energy-patterning projector used to capture targets, mountable on a RIG."
+	id = "rig_enet"
+	req_tech = list(TECH_MATERIAL = 5, TECH_POWER = 6, TECH_MAGNET = 5, TECH_ILLEGAL = 4, TECH_ENGINEERING = 6)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_GLASS = 3000, MATERIAL_DIAMOND = 2000, MATERIAL_PLASTIC = 2000)
+	build_path = /obj/item/rig_module/fabricator/energy_net
+	sort_string = "WCKAC"
+
+/datum/design/item/rig/stealth
+	name = "Active Camouflage"
+	desc = "An integrated active camouflage system, mountable on a RIG."
+	id = "rig_stealth"
+	req_tech = list(TECH_MATERIAL = 5, TECH_POWER = 6, TECH_MAGNET = 6, TECH_ILLEGAL = 6, TECH_ENGINEERING = 7)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_GLASS = 3000, MATERIAL_DIAMOND = 2000, MATERIAL_SILVER = 2000, MATERIAL_URANIUM = 2000, MATERIAL_GOLD = 2000, MATERIAL_PLASTIC = 2000)
+	build_path = /obj/item/rig_module/stealth_field
+	sort_string = "WCLAA"
+
+/datum/design/item/rig/cooling_unit
+	name = "Cooling Unit"
+	desc = "A suit cooling unit, mountable on a RIG."
+	id = "rig_cooler"
+	req_tech = list(TECH_MATERIAL = 2, TECH_MAGNET = 2, TECH_ENGINEERING = 5)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 3500, MATERIAL_PLASTIC = 2000)
+	build_path = /obj/item/rig_module/cooling_unit
+	sort_string = "WCLAB"
+
+/datum/design/item/integrated_printer
+	name = "Integrated Circuit Printer"
+	desc = "This machine provides all the necessary things for circuitry."
+	id = "icprinter"
+	req_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 1)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 5000)
+	build_path = /obj/item/device/integrated_circuit_printer
+	sort_string = "WCLAC"
+
+/datum/design/item/integrated_printer_upgrade_advanced
+	name = "Integrated Circuit Printer Upgrade Disk"
+	desc = "This disk allows for integrated circuit printers to print advanced circuitry designs."
+	id = "icupgradv"
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 10000)
+	build_path = /obj/item/disk/integrated_circuit/upgrade/advanced
+	sort_string = "WCLAD"
+
+/datum/design/item/integrated_printer_upgrade_clone
+	name = "Integrated Circuit Printer Clone Disk"
+	desc = "This disk allows for integrated circuit printers to copy and clone designs instantaneously."
+	id = "icupclo"
+	req_tech = list(TECH_DATA = 3, TECH_MATERIAL = 5)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 10000)
+	build_path = /obj/item/disk/integrated_circuit/upgrade/clone
+	sort_string = "WCLAE"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 // inteliCard Slot
 /datum/design/item/modularcomponent/aislot
@@ -1050,8 +1765,13 @@ CIRCUITS BELOW
 /datum/design/circuit
 	build_type = IMPRINTER
 	req_tech = list(TECH_DATA = 2)
+<<<<<<< HEAD
 	materials = list("glass" = 2000)
 	chemicals = list("sacid" = 20)
+=======
+	materials = list(MATERIAL_GLASS = 2000)
+	chemicals = list(/datum/reagent/acid = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	time = 5
 
 /datum/design/circuit/AssembleDesignName()
@@ -1559,7 +2279,7 @@ CIRCUITS BELOW
 
 /datum/design/aimodule
 	build_type = IMPRINTER
-	materials = list("glass" = 2000, "gold" = 100)
+	materials = list(MATERIAL_GLASS = 2000, MATERIAL_GOLD = 100)
 
 /datum/design/aimodule/AssembleDesignName()
 	name = "AI module design ([name])"
@@ -1665,6 +2385,7 @@ CIRCUITS BELOW
 	build_path = /obj/item/weapon/aiModule/tyrant
 	sort_string = "XACAD"
 
+<<<<<<< HEAD
 /datum/design/item/pda
 	name = "PDA design"
 	desc = "Cheaper than whiny non-digital assistants."
@@ -1814,3 +2535,14 @@ CIRCUITS BELOW
 	for(var/obj/item/integrated_circuit/circ in O.contents)
 		circ.removable = 0
 	return O
+=======
+/datum/design/item/party
+	name = "Uncertified module: PRTY"
+	desc = "Schematics for a robotic module, scraped from seedy parts of the net. Who knows what it does."
+	id = "borg_party_module"
+	req_tech = list(TECH_DATA = 2, TECH_ILLEGAL = 2)
+	build_type = MECHFAB
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_DIAMOND = 2000)
+	build_path = /obj/item/borg/upgrade/uncertified/party
+	category = "Cyborg Upgrade Modules"
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.

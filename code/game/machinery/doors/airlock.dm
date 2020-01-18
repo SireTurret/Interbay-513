@@ -67,9 +67,15 @@
 	..()
 
 /obj/machinery/door/airlock/get_material()
+<<<<<<< HEAD
 	if(mineral)
 		return get_material_by_name(mineral)
 	return get_material_by_name(MATERIAL_STEEL)
+=======
+	return SSmaterials.get_material_by_name(mineral ? mineral : MATERIAL_STEEL)
+
+//regular airlock presets
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/machinery/door/airlock/command
 	name = "Airlock"
@@ -326,28 +332,118 @@
 
 /obj/machinery/door/airlock/gold
 	name = "Gold Airlock"
+<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doorgold.dmi'
+=======
+	door_color = COLOR_SUN
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_GOLD
 
 /obj/machinery/door/airlock/silver
 	name = "Silver Airlock"
+<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doorsilver.dmi'
+=======
+	door_color = COLOR_SILVER
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_SILVER
 
 /obj/machinery/door/airlock/diamond
 	name = "Diamond Airlock"
+<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doordiamond.dmi'
+=======
+	door_color = COLOR_CYAN_BLUE
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_DIAMOND
 
 /obj/machinery/door/airlock/uranium
 	name = "Uranium Airlock"
 	desc = "And they said I was crazy."
+<<<<<<< HEAD
 	icon = 'icons/obj/doors/Dooruranium.dmi'
+=======
+	door_color = COLOR_PAKISTAN_GREEN
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_URANIUM
 	var/last_event = 0
 	var/rad_power = 7.5
 
+<<<<<<< HEAD
 /obj/machinery/door/airlock/process()
+=======
+/obj/machinery/door/airlock/sandstone
+	name = "\improper Sandstone Airlock"
+	door_color = COLOR_BEIGE
+	mineral = MATERIAL_SANDSTONE
+
+/obj/machinery/door/airlock/phoron
+	name = "\improper Phoron Airlock"
+	desc = "No way this can end badly."
+	door_color = COLOR_PURPLE
+	mineral = MATERIAL_PHORON
+
+/obj/machinery/door/airlock/centcom
+	airlock_type = "centcomm"
+	name = "\improper Airlock"
+	icon = 'icons/obj/doors/centcomm/door.dmi'
+	fill_file = 'icons/obj/doors/centcomm/fill_steel.dmi'
+	paintable = AIRLOCK_PAINTABLE|AIRLOCK_STRIPABLE
+
+/obj/machinery/door/airlock/highsecurity
+	airlock_type = "secure"
+	name = "Secure Airlock"
+	icon = 'icons/obj/doors/secure/door.dmi'
+	fill_file = 'icons/obj/doors/secure/fill_steel.dmi'
+	explosion_resistance = 20
+	secured_wires = 1
+	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity
+	paintable = 0
+
+/obj/machinery/door/airlock/highsecurity/bolted
+	locked = 1
+
+/obj/machinery/door/airlock/hatch
+	airlock_type = "hatch"
+	name = "\improper Airtight Hatch"
+	icon = 'icons/obj/doors/hatch/door.dmi'
+	fill_file = 'icons/obj/doors/hatch/fill_steel.dmi'
+	stripe_file = 'icons/obj/doors/hatch/stripe.dmi'
+	stripe_fill_file = 'icons/obj/doors/hatch/fill_stripe.dmi'
+	bolts_file = 'icons/obj/doors/hatch/lights_bolts.dmi'
+	deny_file = 'icons/obj/doors/hatch/lights_deny.dmi'
+	lights_file = 'icons/obj/doors/hatch/lights_green.dmi'
+	panel_file = 'icons/obj/doors/hatch/panel.dmi'
+	welded_file = 'icons/obj/doors/hatch/welded.dmi'
+	emag_file = 'icons/obj/doors/hatch/emag.dmi'
+	explosion_resistance = 20
+	opacity = 1
+	assembly_type = /obj/structure/door_assembly/door_assembly_hatch
+	paintable = AIRLOCK_STRIPABLE
+
+/obj/machinery/door/airlock/hatch/maintenance
+	name = "Maintenance Hatch"
+	stripe_color = COLOR_AMBER
+
+/obj/machinery/door/airlock/hatch/maintenance/bolted
+	locked = 1
+
+/obj/machinery/door/airlock/vault
+	airlock_type = "vault"
+	name = "Vault"
+	icon = 'icons/obj/doors/vault/door.dmi'
+	fill_file = 'icons/obj/doors/vault/fill_steel.dmi'
+	explosion_resistance = 20
+	opacity = 1
+	secured_wires = 1
+	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity //Until somebody makes better sprites.
+	paintable = AIRLOCK_PAINTABLE|AIRLOCK_STRIPABLE
+
+/obj/machinery/door/airlock/vault/bolted
+	locked = 1
+
+/obj/machinery/door/airlock/Process()
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(main_power_lost_until > 0 && world.time >= main_power_lost_until)
 		regainMainPower()
 

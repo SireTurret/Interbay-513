@@ -8,7 +8,11 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 
+<<<<<<< HEAD
 	matter = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20)
+=======
+	matter = list(MATERIAL_STEEL = 50,MATERIAL_GLASS = 20)
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	action_button_name = "Toggle Flashlight"
 	var/on = 0
@@ -135,8 +139,38 @@
 	icon_state = "maglight"
 	force = 10
 	attack_verb = list ("smacked", "thwacked", "thunked")
+<<<<<<< HEAD
 	matter = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 50)
 	hitsound = "swing_hit"
+=======
+	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 50)
+	hitsound = "swing_hit"
+	flashlight_max_bright = 0.5
+	flashlight_outer_range = 5
+/******************************Lantern*******************************/
+/obj/item/device/flashlight/lantern
+	name = "lantern"
+	desc = "A mining lantern."
+	icon = 'icons/obj/lighting.dmi'
+	icon_state = "lantern"
+	item_state = "lantern"
+	force = 10
+	attack_verb = list ("bludgeoned", "bashed", "whack")
+	w_class = ITEM_SIZE_NORMAL
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 100)
+	flashlight_outer_range = 5
+
+/obj/item/device/flashlight/lantern/update_icon()
+	..()
+	if(on)
+		item_state = "lantern-on"
+	else
+		item_state = "lantern"
+
+/******************************Lantern*******************************/
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/device/flashlight/drone
 	name = "low-power flashlight"

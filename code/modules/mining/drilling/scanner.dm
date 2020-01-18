@@ -5,7 +5,16 @@
 	icon_state = "forensic0-old" //GET A BETTER SPRITE.
 	item_state = "electronic"
 	origin_tech = list(TECH_MAGNET = 1, TECH_ENGINEERING = 1)
+<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
+=======
+	matter = list(MATERIAL_STEEL = 150)
+	var/survey_data = 0
+
+/obj/item/weapon/mining_scanner/examine(mob/user)
+	..()
+	to_chat(user,"A tiny indicator on the [src] shows it holds [survey_data] good explorer points.")
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/mining_scanner/attack_self(mob/user as mob)
 	to_chat(user, "You begin sweeping \the [src] about, scanning for metal deposits.")
@@ -29,10 +38,24 @@
 			var/ore_type
 
 			switch(metal)
+<<<<<<< HEAD
 				if("silicates", "carbonaceous rock", "iron")	ore_type = "surface minerals"
 				if("gold", "silver", "diamond")					ore_type = "precious metals"
 				if("uranium")									ore_type = "nuclear fuel"
 				if("phoron", "osmium", "hydrogen")				ore_type = "exotic matter"
+=======
+				if(MATERIAL_SAND, MATERIAL_GRAPHENE, MATERIAL_IRON)
+					ore_type = "surface minerals"
+				if(MATERIAL_GOLD, MATERIAL_SILVER, MATERIAL_DIAMOND)
+					ore_type = "precious metals"
+					data_value = 2
+				if(MATERIAL_URANIUM)
+					ore_type = "nuclear fuel"
+					data_value = 3
+				if(MATERIAL_PHORON, MATERIAL_OSMIUM, MATERIAL_HYDROGEN)
+					ore_type = "exotic matter"
+					data_value = 4
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 			if(ore_type) metals[ore_type] += T.resources[metal]
 
@@ -47,3 +70,47 @@
 			if(76 to INFINITY) result = "huge quantities"
 
 		to_chat(user, "- [result] of [ore_type].")
+<<<<<<< HEAD
+=======
+
+	if(new_data)
+		survey_data += new_data
+		playsound(loc, 'sound/machines/ping.ogg', 40, 1)
+		to_chat(user,"<span class='notice'>New survey data stored - [new_data] GEP.</span>")
+
+/obj/item/weapon/mining_scanner/verb/get_data()
+	set category = "Object"
+	set name = "Get Survey Data"
+	set src in usr
+
+	var/mob/M = usr
+	if(!istype(M))
+		return
+	if(M.incapacitated())
+		return
+	if(!survey_data)
+		to_chat(M,"<span class='warning'>There is no survey data stored on the [src].</span>")
+		return
+	visible_message("<span class='notice'>The [src] spits out a disk containing [survey_data] GEP.</span>")
+	var/obj/item/weapon/disk/survey/D = new(get_turf(src))
+	D.data = survey_data
+	survey_data = 0
+	M.put_in_hands(D)
+
+/obj/item/weapon/disk/survey
+	name = "survey data disk"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "nucleardisk"
+	var/data
+
+/obj/item/weapon/disk/survey/examine(mob/user)
+	..()
+	to_chat(user,"A tiny indicator on the [src] shows it holds [data] good explorer points.")
+
+/obj/item/weapon/disk/survey/Value()
+	if(data < 10000)
+		return 0.07*data
+	if(data < 30000)
+		return 0.1*data
+	return 0.15*data
+>>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
