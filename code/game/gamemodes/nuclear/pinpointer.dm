@@ -67,11 +67,11 @@
 		target = null
 		return
 
-    examine(mob/user)
-        . = ..(user)
-        for(var/obj/machinery/nuclearbomb/bomb in world)
-            if(bomb.timing)
-                to_chat(user, "Extreme danger.  Arming signal detected. Time remaining: [bomb.timeleft]")
+	examine(mob/user)
+		. = ..(user)
+		for(var/obj/machinery/nuclearbomb/bomb in world)
+			if(bomb.timing)
+				to_chat(user, "Extreme danger.  Arming signal detected. Time remaining: [bomb.timeleft]")
 
 /obj/item/weapon/pinpointer/Destroy()
 	active = 0
