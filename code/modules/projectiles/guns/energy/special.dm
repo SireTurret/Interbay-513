@@ -174,8 +174,7 @@ obj/item/weapon/gun/energy/staff/focus
 	item_state = "focus"
 	slot_flags = SLOT_BACK
 	projectile_type = /obj/item/projectile/forcebolt
-<<<<<<< HEAD
-	/*
+
 	attack_self(mob/living/user as mob)
 		if(projectile_type == /obj/item/projectile/forcebolt)
 			charge_cost = 400
@@ -185,8 +184,6 @@ obj/item/weapon/gun/energy/staff/focus
 			charge_cost = 200
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
 			projectile_type = /obj/item/projectile/forcebolt"
-	*/
-=======
 
 /obj/item/weapon/gun/energy/plasmacutter
 	name = "plasma cutter"
@@ -210,4 +207,3 @@ obj/item/weapon/gun/energy/staff/focus
 	use_external_power = 1
 	max_shots = 4
 	has_safety = FALSE
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
