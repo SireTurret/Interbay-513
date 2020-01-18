@@ -195,11 +195,6 @@
 	var/instant = 0
 	var/colourName = "red" //for updateIcon purposes
 
-<<<<<<< HEAD
-	New()
-		name = "[colourName] crayon"
-		..()
-=======
 /obj/item/weapon/pen/fancy
 	name = "fancy pen"
 	desc = "A high quality traditional fountain pen with an internal reservoir and an extra fine gold-platinum nib. Guaranteed never to leak."
@@ -207,4 +202,4 @@
 	throwforce = 1 //pointy
 	colour = "#1c1713" //dark ashy brownish
 	matter = list(MATERIAL_STEEL = 15)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
+
