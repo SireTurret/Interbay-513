@@ -20,11 +20,8 @@
 	..()
 	if(!material_name)
 		material_name = MATERIAL_STEEL
-<<<<<<< HEAD
 	material = get_material_by_name(material_name)
-=======
 	material = SSmaterials.get_material_by_name(material_name)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(!material)
 		qdel(src)
 		return
@@ -241,8 +238,5 @@
 	..(newloc, MATERIAL_RESIN, complexity)
 
 /obj/machinery/door/unpowered/simple/cult/New(var/newloc,var/material_name,var/complexity)
-<<<<<<< HEAD
 	..(newloc, MATERIAL_CULT, complexity)
-=======
 	..(newloc, MATERIAL_CULT, complexity)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
