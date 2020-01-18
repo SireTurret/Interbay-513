@@ -47,11 +47,8 @@
 		set_opacity(0)
 		layer = open_layer
 
-<<<<<<< HEAD
 	implicit_material = get_material_by_name(MATERIAL_PLASTEEL)
-=======
 	implicit_material = SSmaterials.get_material_by_name(MATERIAL_PLASTEEL)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/machinery/door/airlock/Destroy()
 	qdel(wifi_receiver)
