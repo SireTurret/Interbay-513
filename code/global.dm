@@ -12,7 +12,7 @@ var/global/list/active_diseases          = list()
 var/global/list/med_hud_users            = list() // List of all entities using a medical HUD.
 var/global/list/sec_hud_users            = list() // List of all entities using a security HUD.
 var/global/list/hud_icon_reference       = list()
-var/global/list/traders                  = list() //List of all nearby traders
+var/global/list/traders                  = list() //List of all nearby traders.
 
 var/global/list/listening_objects         = list() // List of objects that need to be able to hear, used to avoid recursive searching through contents.
 
@@ -24,14 +24,14 @@ var/global/datum/universal_state/universe = new
 var/global/list/global_map = null
 
 // Noises made when hit while typing.
-var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF")
+var/list/hit_appends = list("-OOF", "-ACK", "-UGH", "-HRNK", "-HURGH", "-GLORF", "-HNGH")
 
 
 var/diary               = null
 var/href_logfile        = null
-var/game_version        = "InterBay"
+var/game_version        = "InterHippie"
 var/changelog_hash      = ""
-var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 544)
+var/game_year           = (text2num(time2text(world.realtime, "YYYY")) + 823)
 
 var/round_progressing = 1
 var/master_mode       = "extended" // "extended"
