@@ -358,13 +358,8 @@
 	name = "Rapid taser cooling module"
 	desc = "Used to cool a mounted taser, increasing the potential current in it and thus its recharge rate."
 	id = "borg_taser_module"
-<<<<<<< HEAD
-	materials = list(DEFAULT_WALL_MATERIAL = 80000, "glass" = 6000, "gold" = 2000, "diamond" = 500)
-	build_path = /obj/item/borg/upgrade/tasercooler
-=======
 	materials = list(MATERIAL_STEEL = 80000, MATERIAL_GLASS = 6000, MATERIAL_GOLD = 2000, MATERIAL_DIAMOND = 500)
 	build_path = /obj/item/borg/upgrade/weaponcooler
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/design/item/robot_upgrade/jetpack
 	name = "Jetpack module"
