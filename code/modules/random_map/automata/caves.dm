@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 GLOBAL_LIST_INIT(weighted_minerals_sparse, \
 	list(                   \
 		MATERIAL_PITCHBLENDE =  8, \
@@ -40,7 +39,6 @@ GLOBAL_LIST_INIT(weighted_minerals_rich, \
 		MATERIAL_BAUXITE =      1  \
 	))
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /datum/random_map/automata/cave_system
 	iterations = 5
 	descriptor = "moon caves"
