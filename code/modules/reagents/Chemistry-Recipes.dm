@@ -1649,16 +1649,9 @@
 
 /datum/chemical_reaction/patron
 	name = "Patron"
-<<<<<<< HEAD
-	id = "patron"
-	result = "patron"
-	required_reagents = list("tequilla" = 10, "silver" = 1)
-	result_amount = 11
-=======
 	result = /datum/reagent/ethanol/patron
 	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, /datum/reagent/silver = 1)
 	result_amount = 10
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /datum/chemical_reaction/bilk
 	name = "Bilk"
