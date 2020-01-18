@@ -21,10 +21,6 @@
 	var/apply_prefix = 1
 
 	if(prob(40))
-<<<<<<< HEAD
-		material_descriptor = pick("rusted ","dusty ","archaic ","fragile ")
-	source_material = pick("cordite","quadrinium",DEFAULT_WALL_MATERIAL,"titanium","aluminium","ferritic-alloy","plasteel","duranium")
-=======
 		material_descriptor = pick("rusted","dusty","archaic","fragile")
 	if(istype(I, /obj/item/weapon/material))
 		var/obj/item/weapon/material/M = I
@@ -32,8 +28,6 @@
 		source_material = "alien alloy"
 	else
 		source_material = pick("cordite","quadrinium","steel","titanium","aluminium","ferritic-alloy","plasteel","duranium")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
-
 	var/talkative = 0
 	if(prob(5))
 		talkative = 1
