@@ -92,11 +92,10 @@
 			return
 
 // Preset types - left here for the code that uses them
-<<<<<<< HEAD
 /obj/item/weapon/material/shard/shrapnel/New(loc)
 	..(loc, "steel")
 	force = 10
-=======
+
 /obj/item/weapon/material/shrapnel
 	name = "shrapnel"
 	default_material = MATERIAL_STEEL
@@ -104,7 +103,6 @@
 
 /obj/item/weapon/material/shard/shrapnel/New(loc)
 	..(loc, MATERIAL_STEEL)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/material/shard/phoron/New(loc)
 	..(loc, MATERIAL_PHORON_GLASS)
