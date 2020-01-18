@@ -1,8 +1,7 @@
 /obj/item/weapon/pickaxe/brush
 	name = "brush"
 	icon = 'icons/obj/xenoarchaeology.dmi'
-<<<<<<< HEAD
-=======
+
 	item_state = "screwdriver_brown"
 	force = 3
 	throwforce = 0
@@ -20,7 +19,6 @@
 
 /obj/item/weapon/pickaxe/xeno/brush
 	name = "wire brush"
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	icon_state = "pick_brush"
 	item_state = "syringe_0"
 	slot_flags = SLOT_EARS
@@ -113,14 +111,10 @@
 	excavation_amount = 30
 	drill_sound = 'sound/items/Crowbar.ogg'
 	drill_verb = "clearing"
-<<<<<<< HEAD
-	w_class = ITEM_SIZE_SMALL
-=======
 	matter = list(MATERIAL_STEEL = 150)
 	w_class = ITEM_SIZE_NORMAL
 	force = 6
 	throwforce = 3
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Pack for holding pickaxes
