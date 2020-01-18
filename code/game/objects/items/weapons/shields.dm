@@ -95,8 +95,6 @@
 	else
 		..()
 
-<<<<<<< HEAD
-=======
 /obj/item/weapon/shield/riot/metal
 	name = "plasteel combat shield"
 	icon_state = "metal"
@@ -111,7 +109,6 @@
 	can_block_lasers = TRUE
 	slowdown_general = 1.5
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/item/weapon/shield/buckler
 	name = "buckler"
 	desc = "A wooden buckler used to block sharp things from entering your body back in the day.."
