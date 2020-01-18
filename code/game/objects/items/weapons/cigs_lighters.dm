@@ -287,9 +287,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/smokable/cigarette/dromedaryco
 	brand = "\improper Dromedary Co. cigarette"
 
-<<<<<<< HEAD
+
 /obj/item/clothing/mask/smokable/cigarette/attackby(obj/item/weapon/W as obj, mob/user as mob)
-=======
+
 /obj/item/clothing/mask/smokable/cigarette/trident
 	name = "wood tip cigar"
 	brand = "\improper Trident cigar"
@@ -332,7 +332,6 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	matter = list(MATERIAL_WOOD = 1)
 
 /obj/item/clothing/mask/smokable/cigarette/attackby(var/obj/item/weapon/W, var/mob/user)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	..()
 
 	if(istype(W, /obj/item/weapon/melee/energy/sword))
