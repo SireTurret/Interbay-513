@@ -164,7 +164,6 @@ var/list/wireColours = list("red", "blue", "green", "darkred", "orange", "brown"
 /datum/wires/proc/UpdatePulsed(var/index)
 	return
 
-<<<<<<< HEAD
 =======
 /datum/wires/proc/examine(index, mob/user)
 	. = "You aren't sure what this wire does."
