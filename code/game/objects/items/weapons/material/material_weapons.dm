@@ -15,12 +15,8 @@
 	var/unbreakable
 	var/force_divisor = 0.5
 	var/thrown_force_divisor = 0.5
-<<<<<<< HEAD
-	var/default_material = DEFAULT_WALL_MATERIAL
-=======
 	var/attack_cooldown_modifier
 	var/default_material = MATERIAL_STEEL
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/material/material
 	var/drops_debris = 1
 
@@ -97,14 +93,14 @@
 	playsound(src, "shatter", 70, 1)
 	if(!consumed && drops_debris) material.place_shard(T)
 	qdel(src)
-/*
+
 Commenting this out pending rebalancing of radiation based on small objects.
 /obj/item/weapon/material/process()
 	if(!material.radioactivity)
 		return
 	for(var/mob/living/L in range(1,src))
 		L.apply_effect(round(material.radioactivity/30),IRRADIATE, blocked = L.getarmor(null, "rad"))
-*/
+
 
 /*
 // Commenting this out while fires are so spectacularly lethal, as I can't seem to get this balanced appropriately.
