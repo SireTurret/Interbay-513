@@ -6,7 +6,6 @@
 	desc = "This knife is dull but well used."
 
 	default_material = "MATERIAL_CULT"
-=======
 	default_material = MATERIAL_CULT
 
 /obj/item/weapon/material/knife/ritual/sacrifice/resolve_attackby(var/atom/a, var/mob/user, var/click_params)
