@@ -187,7 +187,7 @@
 
 /obj/item/device/radio/headset/heads/hop
 	name = "overseer's headset"
-	desc = "The headset of the guy who will one day be captain."
+	desc = "The headset of the guy who will one day be dead/magistrate."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/hop
@@ -208,7 +208,7 @@
 
 /obj/item/device/radio/headset/ert
 	name = "emergency response team radio headset"
-	desc = "The headset of the boss's boss."
+	desc = "The headset of the bosses boss."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/ert
@@ -222,14 +222,14 @@
 
 /obj/item/device/radio/headset/inquision
 	name = "inquisition's headset"
-	desc = "The headset of religious intolorence."
+	desc = "The headset of religious intolerance."
 	icon_state = "rob_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_inquisition
 
 /obj/item/device/radio/headset/entertainment
 	name = "actor's radio headset"
-	desc = "specially made to make you sound less cheesy."
+	desc = "Specially made to make you sound less cheesy."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/entertainment
