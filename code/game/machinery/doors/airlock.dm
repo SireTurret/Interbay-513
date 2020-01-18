@@ -67,15 +67,12 @@
 	..()
 
 /obj/machinery/door/airlock/get_material()
-<<<<<<< HEAD
 	if(mineral)
 		return get_material_by_name(mineral)
 	return get_material_by_name(MATERIAL_STEEL)
-=======
 	return SSmaterials.get_material_by_name(mineral ? mineral : MATERIAL_STEEL)
 
 //regular airlock presets
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/machinery/door/airlock/command
 	name = "Airlock"
@@ -332,46 +329,32 @@
 
 /obj/machinery/door/airlock/gold
 	name = "Gold Airlock"
-<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doorgold.dmi'
-=======
 	door_color = COLOR_SUN
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_GOLD
 
 /obj/machinery/door/airlock/silver
 	name = "Silver Airlock"
-<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doorsilver.dmi'
-=======
 	door_color = COLOR_SILVER
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_SILVER
 
 /obj/machinery/door/airlock/diamond
 	name = "Diamond Airlock"
-<<<<<<< HEAD
 	icon = 'icons/obj/doors/Doordiamond.dmi'
-=======
 	door_color = COLOR_CYAN_BLUE
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_DIAMOND
 
 /obj/machinery/door/airlock/uranium
 	name = "Uranium Airlock"
 	desc = "And they said I was crazy."
-<<<<<<< HEAD
 	icon = 'icons/obj/doors/Dooruranium.dmi'
-=======
 	door_color = COLOR_PAKISTAN_GREEN
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	mineral = MATERIAL_URANIUM
 	var/last_event = 0
 	var/rad_power = 7.5
 
-<<<<<<< HEAD
 /obj/machinery/door/airlock/process()
-=======
 /obj/machinery/door/airlock/sandstone
 	name = "\improper Sandstone Airlock"
 	door_color = COLOR_BEIGE
@@ -443,7 +426,6 @@
 	locked = 1
 
 /obj/machinery/door/airlock/Process()
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(main_power_lost_until > 0 && world.time >= main_power_lost_until)
 		regainMainPower()
 
