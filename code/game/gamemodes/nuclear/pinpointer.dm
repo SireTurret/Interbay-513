@@ -8,7 +8,6 @@
 	item_state = "electronic"
 	throw_speed = 4
 	throw_range = 20
-	matter = list(MATERIAL_STEEL = 500)
 	var/obj/item/weapon/disk/nuclear/the_disk = null
 	matter = list(MATERIAL_STEEL = 500)
 	var/weakref/target
@@ -69,7 +68,7 @@
 		return
 
 	examine(mob/user)
-		. = ..(user)
+		. = ..
 		for(var/obj/machinery/nuclearbomb/bomb in world)
 			if(bomb.timing)
 				to_chat(user, "Extreme danger. Arming signal detected. Time remaining: [bomb.timeleft]")
