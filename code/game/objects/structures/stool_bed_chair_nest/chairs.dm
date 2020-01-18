@@ -94,8 +94,6 @@
 	src.set_dir(turn(src.dir, 90))
 	return
 
-<<<<<<< HEAD
-=======
 /obj/structure/bed/chair/padded/red/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,MATERIAL_CARPET)
 
@@ -126,7 +124,6 @@
 /obj/structure/bed/chair/padded/yellow/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"yellow")
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 // Leaving this in for the sake of compilation.
 /obj/structure/bed/chair/comfy
 	desc = "It's a chair. It looks comfy."
@@ -148,13 +145,8 @@
 /obj/structure/bed/chair/comfy/green/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"green")
 
-<<<<<<< HEAD
-/obj/structure/bed/chair/comfy/purp/New(var/newloc,var/newmaterial)
-	..(newloc,"steel","purple")
-=======
 /obj/structure/bed/chair/comfy/purple/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"purple")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/structure/bed/chair/comfy/blue/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"blue")
@@ -165,12 +157,9 @@
 /obj/structure/bed/chair/comfy/lime/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"lime")
 
-<<<<<<< HEAD
-=======
 /obj/structure/bed/chair/comfy/yellow/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"yellow")
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/structure/bed/chair/comfy/captain
 	name = "captain chair"
 	desc = "It's a chair. Only for the highest ranked asses."
@@ -179,10 +168,6 @@
 	buckle_movable = 1
 
 /obj/structure/bed/chair/comfy/captain/New(var/newloc,var/newmaterial)
-<<<<<<< HEAD
-	..(newloc,"steel","black")
-
-=======
 	..(newloc,MATERIAL_STEEL,"blue")
 
 /obj/structure/bed/chair/armchair
@@ -272,15 +257,6 @@
 			victim.apply_damage(10, BRUTE, def_zone, blocked)
 		occupant.visible_message("<span class='danger'>[occupant] crashed into \the [A]!</span>")
 
-<<<<<<< HEAD
-/obj/structure/bed/chair/office/light
-	base_icon = "officechair_white"
-	icon_state = "officechair_white_preview"
-
-/obj/structure/bed/chair/office/dark
-	base_icon = "officechair_dark"
-	icon_state = "officechair_dark_preview"
-=======
 /obj/structure/bed/chair/office/light/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,MATERIAL_COTTON)
 
@@ -322,7 +298,6 @@
 
 /obj/structure/bed/chair/office/comfy/yellow/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,"yellow")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 // Chair types
 /obj/structure/bed/chair/wood
@@ -342,8 +317,6 @@
 /obj/structure/bed/chair/wood/wings
 	base_icon = "wooden_chair_wings"
 	icon_state = "wooden_chair_wings_preview"
-<<<<<<< HEAD
-=======
 
 /obj/structure/bed/chair/shuttle
 	name = "shuttle seat"
@@ -376,4 +349,3 @@
 
 /obj/structure/bed/chair/shuttle/white/New(var/newloc,var/newmaterial)
 	..(newloc,MATERIAL_STEEL,MATERIAL_COTTON)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
