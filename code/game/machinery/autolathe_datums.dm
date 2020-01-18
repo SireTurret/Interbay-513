@@ -32,11 +32,10 @@
 	path = /obj/item/device/flashlight
 	category = "General"
 
-<<<<<<< HEAD
 /datum/autolathe/recipe/zipgunframe
 	name = "zipgun frame"
 	path = /obj/item/weapon/zipgunframe
-=======
+
 /datum/autolathe/recipe/floor_light
 	name = "floor light"
 	path = /obj/machinery/floor_light
@@ -396,7 +395,6 @@
 /datum/autolathe/recipe/blackpen
 	name = "black ink pen"
 	path = /obj/item/weapon/pen
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	category = "General"
 
 /datum/autolathe/recipe/pipe
