@@ -38,9 +38,8 @@
 	item_state = "knife"
 	attack_verb = list("stabbed", "chopped", "cut")
 	applies_material_colour = 1
-<<<<<<< HEAD
 	drawsound = 'sound/items/unholster_knife.ogg'
-=======
+
 
 /obj/item/weapon/material/hatchet/machete
 	name = "machete"
@@ -63,7 +62,6 @@
 /obj/item/weapon/material/hatchet/machete/deluxe/Initialize()
 	. = ..()
 	icon_state = "machetedx"
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/material/minihoe // -- Numbers
 	name = "mini hoe"
