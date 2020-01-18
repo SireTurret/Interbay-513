@@ -169,17 +169,11 @@ var/global/list/breach_burn_descriptors = list(
 		else if(burn_damage >= 3 && burn_damage > brute_damage)
 			name = "scorched [base_name]"
 		else
-<<<<<<< HEAD
-			name = "damaged [base_name]"
-	else
-		name = "[base_name]"
-=======
 			SetName("damaged [initial(name)]")
 	else if(all_patched)
 		SetName("patched [initial(name)]")
 	else
 		SetName(initial(name))
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	return damage
 
