@@ -1,19 +1,13 @@
 /turf/simulated/wall/r_wall
 	icon_state = "rgeneric"
 /turf/simulated/wall/r_wall/New(var/newloc)
-<<<<<<< HEAD
-	..(newloc, "plasteel","plasteel") //3strong
-=======
 	..(newloc, MATERIAL_PLASTEEL,MATERIAL_PLASTEEL) //3strong
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /turf/simulated/wall/ocp_wall
 	icon_state = "rgeneric"
 /turf/simulated/wall/ocp_wall/New(var/newloc)
 	..(newloc, MATERIAL_OSMIUM_CARBIDE_PLASTEEL, MATERIAL_OSMIUM_CARBIDE_PLASTEEL)
 
-<<<<<<< HEAD
-=======
 /turf/simulated/wall/r_wall/rglass_wall/New(var/newloc) //Structural, but doesn't impede line of sight. Fairly pretty anyways.
 	..(newloc, MATERIAL_REINFORCED_GLASS, MATERIAL_STEEL)
 	icon_state = "rgeneric"
@@ -43,19 +37,13 @@
 			var/bleach_factor = rand(10,50)
 			paint_color = adjust_brightness(paint_color, bleach_factor)
 	update_icon()
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 
 
 /turf/simulated/wall/cult
 	icon_state = "cult"
 /turf/simulated/wall/cult/New(var/newloc, var/reinforce = 0)
-<<<<<<< HEAD
-	..(newloc,"cult",reinforce ? "cult2" : null)
-	new /obj/effect/overlay/cult/cultwall(src)
-=======
 	..(newloc, MATERIAL_CULT, reinforce ? MATERIAL_REINFORCED_CULT : null)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /turf/simulated/wall/cult/reinf/New(var/newloc)
 	..(newloc, 1)
@@ -72,29 +60,6 @@
 	icon_state = "cult"
 
 /turf/simulated/wall/iron/New(var/newloc)
-<<<<<<< HEAD
-	..(newloc,"iron")
-/turf/simulated/wall/uranium/New(var/newloc)
-	..(newloc,"uranium")
-/turf/simulated/wall/diamond/New(var/newloc)
-	..(newloc,"diamond")
-/turf/simulated/wall/gold/New(var/newloc)
-	..(newloc,"gold")
-/turf/simulated/wall/silver/New(var/newloc)
-	..(newloc,"silver")
-/turf/simulated/wall/phoron/New(var/newloc)
-	..(newloc,"phoron")
-/turf/simulated/wall/sandstone/New(var/newloc)
-	..(newloc,"sandstone")
-/turf/simulated/wall/wood/New(var/newloc)
-	..(newloc,"wood")
-/turf/simulated/wall/ironphoron/New(var/newloc)
-	..(newloc,"iron","phoron")
-/turf/simulated/wall/golddiamond/New(var/newloc)
-	..(newloc,"gold","diamond")
-/turf/simulated/wall/silvergold/New(var/newloc)
-	..(newloc,"silver","gold")
-=======
 	..(newloc,MATERIAL_IRON)
 
 /turf/simulated/wall/uranium/New(var/newloc)
@@ -137,9 +102,6 @@
 /turf/simulated/wall/voxshuttle/attackby()
 	return
 /turf/simulated/wall/titanium/New(var/newloc)
-<<<<<<< HEAD
-	..(newloc,"titanium")
-=======
 	..(newloc,MATERIAL_TITANIUM)
 
 /turf/simulated/wall/alium
@@ -157,4 +119,3 @@
 
 /turf/simulated/wall/crystal/New(var/newloc)
 	..(newloc,MATERIAL_CRYSTAL)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
