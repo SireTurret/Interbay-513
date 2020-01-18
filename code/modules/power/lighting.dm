@@ -628,13 +628,8 @@ obj/machinery/light/proc/burn_out()
 	icon_state = "lbulb"
 	base_state = "lbulb"
 	item_state = "contvapour"
-<<<<<<< HEAD
-	broken_chance = 5
-	matter = list("glass" = 100)
-=======
 	broken_chance = 3
 	matter = list(MATERIAL_GLASS = 100)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 	brightness_range = 4
 	brightness_power = 2
@@ -657,13 +652,7 @@ obj/machinery/light/proc/burn_out()
 	icon_state = "fbulb"
 	base_state = "fbulb"
 	item_state = "egg4"
-<<<<<<< HEAD
-	matter = list("glass" = 100)
-	brightness_range = 4
-	brightness_power = 2
-=======
 	matter = list(MATERIAL_GLASS = 100)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 // update the icon state and description of the light
 /obj/item/weapon/light/update_icon()
