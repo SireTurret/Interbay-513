@@ -1,7 +1,7 @@
 /var/obj/effect/lobby_image = new/obj/effect/lobby_image()
 
 /obj/effect/lobby_image
-	name = "InterBay"
+	name = "InterHippie"
 	desc = "This shouldn't be read."
 	screen_loc = "WEST,SOUTH"
 
