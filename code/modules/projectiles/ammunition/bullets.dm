@@ -76,12 +76,8 @@
 	spent_icon = "slshell-spent"
 	caliber = "shotgun"
 	projectile_type = /obj/item/projectile/bullet/shotgun
-<<<<<<< HEAD
-	matter = list(DEFAULT_WALL_MATERIAL = 360)
-=======
 	matter = list(MATERIAL_STEEL = 360)
 	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/ammo_casing/shotgun/pellet
 	name = "shotgun shell"
