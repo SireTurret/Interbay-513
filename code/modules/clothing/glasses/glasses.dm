@@ -189,14 +189,9 @@
 	icon_state = "welding-g"
 	item_state = "welding-g"
 	action_button_name = "Flip Welding Goggles"
-<<<<<<< HEAD
-	matter = list(DEFAULT_WALL_MATERIAL = 1500, "glass" = 1000)
-	var/up = 0
-=======
 	matter = list(MATERIAL_STEEL = 1500, MATERIAL_GLASS = 1000)
 	use_alt_layer = TRUE
 	var/up = FALSE
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	flash_protection = FLASH_PROTECTION_MAJOR
 	tint = TINT_HEAVY
 
