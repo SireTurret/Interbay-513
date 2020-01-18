@@ -90,12 +90,6 @@
 #define WALL_CAN_OPEN 1
 #define WALL_OPENING 2
 
-<<<<<<< HEAD
-#define BOMBCAP_DVSTN_RADIUS (max_explosion_range/4)
-#define BOMBCAP_HEAVY_RADIUS (max_explosion_range/2)
-#define BOMBCAP_LIGHT_RADIUS max_explosion_range
-#define BOMBCAP_FLASH_RADIUS (max_explosion_range*1.5)
-=======
 #define BOMBCAP_DVSTN_RADIUS (GLOB.max_explosion_range/4)
 #define BOMBCAP_HEAVY_RADIUS (GLOB.max_explosion_range/2)
 #define BOMBCAP_LIGHT_RADIUS GLOB.max_explosion_range
