@@ -21,13 +21,8 @@ var/global/list/stool_cache = list() //haha stool
 /obj/item/weapon/stool/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
 	if(!new_material)
-<<<<<<< HEAD
-		new_material = DEFAULT_WALL_MATERIAL
-	material = get_material_by_name(new_material)
-=======
 		new_material = MATERIAL_STEEL
 	material = SSmaterials.get_material_by_name(new_material)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(new_padding_material)
 		padding_material = get_material_by_name(new_padding_material)
 	if(!istype(material))
