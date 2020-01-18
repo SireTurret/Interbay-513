@@ -20,8 +20,5 @@
 		M.adjustToxLoss(rand(20,40))
 
 /obj/item/weapon/material/star/ninja
-<<<<<<< HEAD
-	default_material = "uranium"
-=======
 	default_material = MATERIAL_URANIUM
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
+
