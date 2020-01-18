@@ -21,8 +21,6 @@
 /turf/simulated/floor/fixed/set_flooring()
 	return
 
-<<<<<<< HEAD
-=======
 /turf/simulated/floor/fixed/alium
 	name = "alien plating"
 	desc = "This obviously wasn't made for your feet."
@@ -54,4 +52,3 @@
 		return
 	if(severity == 1)
 		ChangeTurf(get_base_turf_by_area(src))
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
