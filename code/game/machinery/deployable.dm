@@ -70,11 +70,8 @@ for reference:
 	..(newloc)
 	if(!material_name)
 		material_name = MATERIAL_WOOD
-<<<<<<< HEAD
 	material = get_material_by_name("[material_name]")
-=======
 	material = SSmaterials.get_material_by_name("[material_name]")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(!material)
 		qdel(src)
 		return
