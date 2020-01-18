@@ -18,17 +18,12 @@
 	..(newloc, amount)
 
 	if(!default_type)
-<<<<<<< HEAD
-		default_type = DEFAULT_WALL_MATERIAL
-	material = get_material_by_name("[default_type]")
-=======
 		default_type = MATERIAL_STEEL
 	..()
 
 /obj/item/stack/material/Initialize()
 	. = ..()
 	material = SSmaterials.get_material_by_name("[default_type]")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(!material)
 		qdel(src)
 		return 0
@@ -289,9 +284,6 @@
 	desc = "This sheet is special platinum-glass alloy designed to withstand large temperatures. It is reinforced with few rods."
 	singular_name = "reinforced borosilicate glass sheet"
 	icon_state = "sheet-phoronrglass"
-<<<<<<< HEAD
-	default_type = "rphglass"
-=======
 	default_type = MATERIAL_REINFORCED_PHORON_GLASS
 
 /obj/item/stack/material/glass/phoronrglass/ten
@@ -312,4 +304,3 @@
 /obj/item/stack/material/generic/Initialize()
 	. = ..()
 	if(material) color = material.icon_colour
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
