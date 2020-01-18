@@ -5,16 +5,13 @@
 	icon_state = "forensic0-old" //GET A BETTER SPRITE.
 	item_state = "electronic"
 	origin_tech = list(TECH_MAGNET = 1, TECH_ENGINEERING = 1)
-<<<<<<< HEAD
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
-=======
 	matter = list(MATERIAL_STEEL = 150)
 	var/survey_data = 0
 
 /obj/item/weapon/mining_scanner/examine(mob/user)
 	..()
 	to_chat(user,"A tiny indicator on the [src] shows it holds [survey_data] good explorer points.")
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/weapon/mining_scanner/attack_self(mob/user as mob)
 	to_chat(user, "You begin sweeping \the [src] about, scanning for metal deposits.")
@@ -38,12 +35,10 @@
 			var/ore_type
 
 			switch(metal)
-<<<<<<< HEAD
 				if("silicates", "carbonaceous rock", "iron")	ore_type = "surface minerals"
 				if("gold", "silver", "diamond")					ore_type = "precious metals"
 				if("uranium")									ore_type = "nuclear fuel"
 				if("phoron", "osmium", "hydrogen")				ore_type = "exotic matter"
-=======
 				if(MATERIAL_SAND, MATERIAL_GRAPHENE, MATERIAL_IRON)
 					ore_type = "surface minerals"
 				if(MATERIAL_GOLD, MATERIAL_SILVER, MATERIAL_DIAMOND)
@@ -55,7 +50,6 @@
 				if(MATERIAL_PHORON, MATERIAL_OSMIUM, MATERIAL_HYDROGEN)
 					ore_type = "exotic matter"
 					data_value = 4
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 			if(ore_type) metals[ore_type] += T.resources[metal]
 
@@ -70,8 +64,7 @@
 			if(76 to INFINITY) result = "huge quantities"
 
 		to_chat(user, "- [result] of [ore_type].")
-<<<<<<< HEAD
-=======
+
 
 	if(new_data)
 		survey_data += new_data
@@ -113,4 +106,3 @@
 	if(data < 30000)
 		return 0.1*data
 	return 0.15*data
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
