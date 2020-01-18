@@ -64,11 +64,7 @@
 	..(newloc, MATERIAL_PHORON)
 
 /obj/item/weapon/fuel_assembly/supermatter/New(var/newloc)
-<<<<<<< HEAD
-	..(newloc, "supermatter")
-=======
 	..(newloc, MATERIAL_SUPERMATTER)
 
 /obj/item/fuel_assembly/hydrogen/New(var/newloc)
 	..(newloc, MATERIAL_HYDROGEN)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
