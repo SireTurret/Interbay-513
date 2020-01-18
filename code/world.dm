@@ -1,6 +1,6 @@
 #define WORLD_ICON_SIZE 32
 
-/var/server_name = "InterBay"
+/var/server_name = "InterHippie"
 
 /var/game_id = null
 /hook/global_init/proc/generate_gameid()
@@ -74,7 +74,7 @@
 	view = "15x15"
 	cache_lifespan = 0	//stops player uploaded stuff from being kept in the rsc past the current session
 	icon_size = WORLD_ICON_SIZE
-	fps = 20
+	fps = 60
 
 #define RECOMMENDED_VERSION 511
 /world/New()
