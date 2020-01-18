@@ -6,10 +6,7 @@
 	throw_speed = 1
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
-<<<<<<< HEAD
-=======
 	matter = list(MATERIAL_STEEL = 1000, MATERIAL_GLASS = 1000)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	var/obj/item/weapon/implant/imp = null
 
 /obj/item/weapon/implanter/New()
