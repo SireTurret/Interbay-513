@@ -74,14 +74,12 @@
 	singular_name = "steel floor tile"
 	desc = "Those could work as a pretty decent throwing weapon." //why?
 	icon_state = "tile"
-<<<<<<< HEAD
 	force = 6.0
 	matter = list(DEFAULT_WALL_MATERIAL = 937.5)
 	throwforce = 15.0
 	throw_speed = 5
 	throw_range = 20
 	flags = CONDUCT
-=======
 	force = 6
 	matter = list(MATERIAL_STEEL = 937.5)
 	throwforce = 15
@@ -142,7 +140,6 @@
 	icon_state = "techtile_maint"
 	matter = list(MATERIAL_STEEL = 937.5)
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 
 /obj/item/stack/tile/floor_white
 	name = "white floor tile"
