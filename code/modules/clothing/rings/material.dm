@@ -8,13 +8,8 @@
 /obj/item/clothing/ring/material/New(var/newloc, var/new_material)
 	..(newloc)
 	if(!new_material)
-<<<<<<< HEAD
-		new_material = DEFAULT_WALL_MATERIAL
-	material = get_material_by_name(new_material)
-=======
 		new_material = MATERIAL_STEEL
 	material = SSmaterials.get_material_by_name(new_material)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	if(!istype(material))
 		qdel(src)
 		return
