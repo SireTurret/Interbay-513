@@ -10,8 +10,6 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
-<<<<<<< HEAD
-=======
 /obj/item/ammo_magazine/c50
 	name = "speed loader (.50)"
 	desc = "A speed loader for revolvers."
@@ -22,7 +20,6 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/item/ammo_magazine/c38
 	name = "speed loader (.38)"
 	icon_state = "38"
@@ -36,8 +33,6 @@
 	name = "speed loader (.38 rubber)"
 	ammo_type = /obj/item/ammo_casing/c38/rubber
 
-<<<<<<< HEAD
-=======
 /obj/item/ammo_magazine/c44
 	name = "speed loader (.44 magnum)"
 	desc = "A speed loader for revolvers."
@@ -53,7 +48,6 @@
 	icon_state = "R38"
 	ammo_type = /obj/item/ammo_casing/c44/rubber
 
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 /obj/item/ammo_magazine/c45m
 	name = "magazine (.45)"
 	icon_state = "45"
@@ -76,9 +70,6 @@
 	ammo_type = /obj/item/ammo_casing/c45/practice
 
 /obj/item/ammo_magazine/c45m/flash
-<<<<<<< HEAD
-	name = "magazine (.45 flash)"
-=======
 	name = "magazine (.45, flash)"
 	ammo_type = /obj/item/ammo_casing/c45/flash
 
@@ -105,7 +96,6 @@
 
 /obj/item/ammo_magazine/c45mds/flash
 	name = "double-stack magazine (.45, flash)"
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	ammo_type = /obj/item/ammo_casing/c45/flash
 
 /obj/item/ammo_magazine/c45uzi
@@ -126,11 +116,7 @@
 	icon_state = "9x19p"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-<<<<<<< HEAD
-	matter = list(DEFAULT_WALL_MATERIAL = 600)
-=======
 	matter = list(MATERIAL_STEEL = 480)
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 10
@@ -140,9 +126,6 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/mc9mm/flash
-<<<<<<< HEAD
-	name = "magazine (9mm flash)"
-=======
 	name = "magazine (9mm, flash)"
 	ammo_type = /obj/item/ammo_casing/c9mm/flash
 
@@ -169,7 +152,6 @@
 
 /obj/item/ammo_magazine/mc9mmds/flash
 	name = "double-stack magazine (9mm, flash)"
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	ammo_type = /obj/item/ammo_casing/c9mm/flash
 
 /obj/item/ammo_magazine/box/c9mm
@@ -254,15 +236,10 @@
 	icon_state = "5.56"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-<<<<<<< HEAD
-	caliber = "a556"
-	matter = list(DEFAULT_WALL_MATERIAL = 1800)
 	ammo_type = /obj/item/ammo_casing/a556
-=======
 	caliber = "a762"
 	matter = list(MATERIAL_STEEL = 1800)
 	ammo_type = /obj/item/ammo_casing/a762
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	max_ammo = 15 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
 
@@ -304,15 +281,9 @@
 	icon_state = "a762"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-<<<<<<< HEAD
-	caliber = "a762"
-	matter = list(DEFAULT_WALL_MATERIAL = 4500)
-	ammo_type = /obj/item/ammo_casing/a762
-=======
 	caliber = "a556"
 	matter = list(MATERIAL_STEEL = 4500)
 	ammo_type = /obj/item/ammo_casing/a556
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	max_ammo = 50
 	multiple_sprites = 1
 
@@ -323,15 +294,9 @@
 	name = "magazine (7.62mm)"
 	icon_state = "c762"
 	mag_type = MAGAZINE
-<<<<<<< HEAD
-	caliber = "a762"
-	matter = list(DEFAULT_WALL_MATERIAL = 1800)
-	ammo_type = /obj/item/ammo_casing/a762
-=======
 	caliber = "a556"
 	matter = list(MATERIAL_STEEL = 1800)
 	ammo_type = /obj/item/ammo_casing/a556
->>>>>>> b6bd2cfa3e... Replaced plastic, steel, glass, plasteel matter strings with defines.
 	max_ammo = 20
 	multiple_sprites = 1
 
